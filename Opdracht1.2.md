@@ -16,15 +16,14 @@ Test je OBA opdracht op verschillende devices en browsers. Noteer welk device en
 
 Laat je website voorlezen door een screenreader.
 
-### Features
+## Features
 
 Hieronder staat de volledige opdracht uitgeschreven. De opdrachten zijn onderverdeeld in mij wiki, hieronder zijn de linkjes te vinden.
 
 - [Features](https://github.com/Zeijls/browser-technologies-1920/wiki/Features)
 - [Device Onderzoek](https://github.com/Zeijlsbrowser-technologies-1920/wiki/Device-onderzoek)
+- [Browser Onderzoek](https://github.com/Zeijls/browser-technologies-1920/wiki/Browser-Onderzoek)
 - [Screenreader](https://github.com/Zeijls/browser-technologies-1920/wiki/Screenreader)
-
-# Features
 
 Voor deze oefening moesten we in groepjes van 6 studenten alle 8 features onderverdelen. Vervolgens ging iedereen individueel onderzoek doen naar de feature die hem was aangewezen, en zich richten op de volgende punten;
 
@@ -128,7 +127,7 @@ You are using Chrome 80 on a HTC Nexus 9 running Android 7.1.1
 
 Bij de Web App van WAFS werkt alles goed, alleen duurde de API wat langer met laden. De loadingstate haperde op het einde een beetje.
 
-![Nexus Tablet ](docs/img/tablet.png)
+![Nexus Tablet ](/docs/img/tablet.png)
 
 ### Nokia Lumia
 
@@ -138,7 +137,7 @@ You are using Mobile Internet Explorer 11.0 on a Nokia Lumia 620 running Windows
 
 Bij de Web App van WAFS laat hij alleen de Titel en subtitel zien. Ik heb het idee dat dit komt doordat de javascript niet wordt ingeladen.
 
-![Nexus Tablet ](docs/img/nokia.png)
+![Nexus Tablet ](/docs/img/nokia.png)
 
 ### Apple IPod Touch
 
@@ -148,7 +147,7 @@ You are on an Apple IPod touch running ios 6.1.3
 
 Bij het bekijken van de Web App op de iPod wat precies hetzelfde verhaal als bij de Nokia Lumnia, alleen de titel en subtitel.
 
-![Nexus Tablet ](docs/img/ipod.png)
+![Nexus Tablet ](/docs/img/ipod.png)
 
 ## Browsers
 
@@ -158,18 +157,15 @@ Tijdens het bouwen van de website werkte ik met Chrome. Voor nu ga ik kijken of 
 
 Voor firefox zie ik eigenlijk geen verschillen met Chrome. Alle features werken naar behoren. Het enige verschil wat mij opviel is dat de afbeeldingen als een soort scanner worden geladen, dit had ik bij Chrome nog nooit gezien.
 
-[Homepage Firefox]([[/docs/img/homepageFirefox.png]])
-[Detail Firefox]([[/docs/img/detailPageFirefox.png]])
+[Homepage Firefox](/docs/img/homepageFirefox.png)
+[Detail Firefox](/docs/img/detailPageFirefox.png)
 
 ### Brave
 
 In eerste instantie laden de afbeeldingen erg sloom, en het ziet er naar uit dat de Skeleton UI nog niet optimaal is. De foto's verschuiven nog kleine stukjes tijdens het laden. Verder werken alle features naar behoren.
 
-[Homepage Brave]([[/docs/img/homePageBrave.png]])
-[Detail Brave]([[/docs/img/detailPageBrave.png]])
-
-De opdracht is ook te vinden in mijn wiki via de volgende link;
-[Browser Onderzoek](https://github.com/Zeijls/browser-technologies-1920/wiki/Browser-Onderzoek)
+[Homepage Brave](/docs/img/homePageBrave.png)
+[Detail Brave](/docs/img/detailPageBrave.png)
 
 ## Screenreader
 
