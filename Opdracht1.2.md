@@ -18,6 +18,12 @@ Laat je website voorlezen door een screenreader.
 
 ### Features
 
+Hieronder staat de volledige opdracht uitgeschreven. De opdrachten zijn onderverdeeld in mij wiki, hieronder zijn de linkjes te vinden.
+
+- [Features](https://github.com/Zeijls/browser-technologies-1920/wiki/Features)
+- [Device Onderzoek](https://github.com/Zeijlsbrowser-technologies-1920/wiki/Device-onderzoek)
+- [Screenreader](https://github.com/Zeijls/browser-technologies-1920/wiki/Screenreader)
+
 # Features
 
 Voor deze oefening moesten we in groepjes van 6 studenten alle 8 features onderverdelen. Vervolgens ging iedereen individueel onderzoek doen naar de feature die hem was aangewezen, en zich richten op de volgende punten;
@@ -28,7 +34,7 @@ Voor deze oefening moesten we in groepjes van 6 studenten alle 8 features onderv
 - Beschrijf hoe je dit kan fiksen
 
 Vervolgens hebben wij de volgende poster gemaakt met onze bevindingen;
-![PosterFeatures](/docs/img/PosterFeatures.png)
+![Poster Features](/docs/img/PosterFeatures.png)
 
 ## 1. Afbeeldingen uitzetten
 
@@ -112,20 +118,64 @@ Het is nog belangrijk om te weten dat:
 - Cookies zijn server site
 - Local Server is client site
 
-De opdracht is te vinden in mijn wiki via de volgende link;
-[Features](https://github.com/Zeijls/browser-technologies-1920/wiki/Features)
+## Devices
 
-### Devices
+### HTC Nexus tablet
 
-De opdracht is te vinden in mijn wiki via de volgende link;
-[Device Onderzoek](https://github.com/Zeijls/browser-technologies-1920/wiki/Device-onderzoek)
+You are using Chrome 80 on a HTC Nexus 9 running Android 7.1.1
 
-### Browsers
+> Mozilla/5.0 (Linux; Android 7.1.1; Nexus 9) Apple Webkit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
 
-De opdracht is te vinden in mijn wiki via de volgende link;
+Bij de Web App van WAFS werkt alles goed, alleen duurde de API wat langer met laden. De loadingstate haperde op het einde een beetje.
+
+![Nexus Tablet ](docs/img/tablet.png)
+
+### Nokia Lumia
+
+You are using Mobile Internet Explorer 11.0 on a Nokia Lumia 620 running Windows Phone 8.1
+
+> Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 620) like iPhone OS 7_0_3 Mac OS X Apple Webkit/537.36 (KHTML, like Gecko) Mobile Safari/537
+
+Bij de Web App van WAFS laat hij alleen de Titel en subtitel zien. Ik heb het idee dat dit komt doordat de javascript niet wordt ingeladen.
+
+![Nexus Tablet ](docs/img/nokia.png)
+
+### Apple IPod Touch
+
+You are on an Apple IPod touch running ios 6.1.3
+
+> Mozilla/5.0 (iPod; CPU iPhone OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B329 Safari/8536.25
+
+Bij het bekijken van de Web App op de iPod wat precies hetzelfde verhaal als bij de Nokia Lumnia, alleen de titel en subtitel.
+
+![Nexus Tablet ](docs/img/ipod.png)
+
+## Browsers
+
+Tijdens het bouwen van de website werkte ik met Chrome. Voor nu ga ik kijken of er verschillen zijn bij andere browsers die impact hebben op de werking van mijn WebApp.
+
+### Firefox
+
+Voor firefox zie ik eigenlijk geen verschillen met Chrome. Alle features werken naar behoren. Het enige verschil wat mij opviel is dat de afbeeldingen als een soort scanner worden geladen, dit had ik bij Chrome nog nooit gezien.
+
+[Homepage Firefox]([[/docs/img/homepageFirefox.png]])
+[Detail Firefox]([[/docs/img/detailPageFirefox.png]])
+
+### Brave
+
+In eerste instantie laden de afbeeldingen erg sloom, en het ziet er naar uit dat de Skeleton UI nog niet optimaal is. De foto's verschuiven nog kleine stukjes tijdens het laden. Verder werken alle features naar behoren.
+
+[Homepage Brave]([[/docs/img/homePageBrave.png]])
+[Detail Brave]([[/docs/img/detailPageBrave.png]])
+
+De opdracht is ook te vinden in mijn wiki via de volgende link;
 [Browser Onderzoek](https://github.com/Zeijls/browser-technologies-1920/wiki/Browser-Onderzoek)
 
-### Screenreader
+## Screenreader
 
-De opdracht is te vinden in mijn wiki via de volgende link;
-[Screenreader](https://github.com/Zeijls/browser-technologies-1920/wiki/Screenreader)
+Voor het gebruiken van een screenreader had ik de volgende extensie van Chrome gebruikt;
+[ChromeVox](https://chrome.google.com/webstore/detail/chromevox-classic-extensi/kgejglhpjiefppelpmljglcjbhoiplfn/related?hl=nl)
+
+Ik had nog nooit eerder met een screenreader gewerkt, en hier eigenlijk ook nog nooit eerder over nagedacht tijdens het bouwen van een website. Mijn website is op dit moment zeker niet geschrikt voor een screenreader.
+
+Ik wist niet dat de screenreader niet binnen artikelen de context kon lezen op de manier dat de Web App nu in elkaar zit. Het zou kunnen dat dit komt doordat de content uit een API wordt ingeladen, maar dit weet ik niet zeker. Op dit moment geeft de screenreader nog geen toegevoegde waarde aan de website.
