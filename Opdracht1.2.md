@@ -4,6 +4,18 @@
 
 Hoe zit het eigenlijk met Progressive Enhancement van je OBA opdracht? Waarschijnlijk kan daar wel het één en ander aan verbeterd worden, dat ding is immers in een week in elkaar gehackt!
 
+## Doel van deze opdracht
+
+Het doel van de deze opdracht is leren hoe je een website kan testen in verschillende browsers en devices, en hoe een screenreader werkt.
+
+## Opdracht
+
+Pas Progressive enhancement toe op je OBA Web App. Test de 8 features uit opdracht 1.1 en verbeter de code waar mogelijk.
+
+Test je OBA opdracht op verschillende devices en browsers. Noteer welk device en welke browsers je hebt getest. Test op minimaal in 3 devices, en naast Chrome, in Firefox en nog een andere browser.
+
+Laat je website voorlezen door een screenreader.
+
 ### Features
 
 # Features
@@ -16,7 +28,7 @@ Voor deze oefening moesten we in groepjes van 6 studenten alle 8 features onderv
 - Beschrijf hoe je dit kan fiksen
 
 Vervolgens hebben wij de volgende poster gemaakt met onze bevindingen;
-![PosterFeatures](https://user-images.githubusercontent.com/45422060/76599380-32d0ad80-6505-11ea-8743-ec2b5946bd9f.jpeg)
+![PosterFeatures](/docs/img/PosterFeatures.jpeg)
 
 ## 1. Afbeeldingen uitzetten
 
