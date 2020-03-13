@@ -127,7 +127,9 @@ You are using Chrome 80 on a HTC Nexus 9 running Android 7.1.1
 
 Bij de Web App van WAFS werkt alles goed, alleen duurde de API wat langer met laden. De loadingstate haperde op het einde een beetje.
 
-![Nexus Tablet ](/docs/img/tablet.png)
+![Tablet Overzicht](/docs/img/tablet.png)
+![Tablet Detail](/docs/img/tablet2.png)
+![Tablet Loading State](/docs/img/tablet.png)
 
 ### Nokia Lumia
 
@@ -137,7 +139,7 @@ You are using Mobile Internet Explorer 11.0 on a Nokia Lumia 620 running Windows
 
 Bij de Web App van WAFS laat hij alleen de Titel en subtitel zien. Ik heb het idee dat dit komt doordat de javascript niet wordt ingeladen.
 
-![Nexus Tablet ](/docs/img/nokia.png)
+![Nokia Lumia](/docs/img/nokia.png)
 
 ### Apple IPod Touch
 
@@ -147,7 +149,7 @@ You are on an Apple IPod touch running ios 6.1.3
 
 Bij het bekijken van de Web App op de iPod wat precies hetzelfde verhaal als bij de Nokia Lumnia, alleen de titel en subtitel.
 
-![Nexus Tablet ](/docs/img/ipod.png)
+![Apple iPod Touch](/docs/img/ipod.png)
 
 ## Browsers
 
