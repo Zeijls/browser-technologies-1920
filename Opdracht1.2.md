@@ -28,7 +28,7 @@ Voor deze oefening moesten we in groepjes van 6 studenten alle 8 features onderv
 - Beschrijf hoe je dit kan fiksen
 
 Vervolgens hebben wij de volgende poster gemaakt met onze bevindingen;
-![PosterFeatures](/docs/img/PosterFeatures.jpeg)
+![PosterFeatures](/docs/img/posterFeatures.png)
 
 ## 1. Afbeeldingen uitzetten
 
