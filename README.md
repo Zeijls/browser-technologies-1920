@@ -1,126 +1,139 @@
 # Browser Technologies @cmda-minor-web 1920
-//Robuuste, toegankelijke websites ontwerpen en maken …
 
-In het vak Browser Technologies leer je hoe je goede, robuuste, toegankelijke websites maakt. Je gaat leren over Progressive Enhancement, Feature Detection en Fallback. Het web is er voor iedereen. In dit vak leer je hoe je daarvoor kan zorgen.
+# Rembrandt van Rijn in het Rijksmuseum
 
-Een van de mooiste principes van het web is dat het er echt is voor iedereen. Iedereen met een computer en een browser moet gebruik kunnen maken van het web. Het web is geen gecontroleerde (programmeer) omgeving. Je kan er gerust van uit gaan dat niemand precies hetzelfde te zien krijgt als wat jij ziet in jouw browser. Er zijn natuurlijk de technische beperkingen. Zoals - Afmetingen van de browser - Grootte van het apparaat - Manier van interactie - Kwaliteit van de hardware - Kwaliteit van het netwerk. En er zijn mensen. Allemaal verschillende mensen ... Hoe zorg je er dan voor dat websites het altijd doen?
+## Web App From Scratch @cmda-minor-web 1819
 
-## Leerdoelen
-- _Wat is Progressive enhancement en hoe kun je dit toepassen._
-- _Hoe doe je Feature Detection en wat doe je als een techniek niet werkt of wordt ondersteund._
-- _Leren een Browser Technologies onderzoeken, testen en implementeren als enhancement._
+![Overzichtspagina](img/overview.png)
+![Detailpagina](img/detail.png)
 
-[Rubric](https://docs.google.com/spreadsheets/d/1MV3BWwwg_Zz1n-S_qOM4iSm4gA4M6g0xAxGacyaPuac/edit?usp=sharing)
+## Inhoudspagina
 
-## Planning
+- [Live Demo](#Live-Demo)
+- [Opdracht 1.1](#Week-1)
 
-| Planning  | Woensdag  |  Donderdag | Vrijdag  |
-|---|---|---|---|
-| <a href=#week-1>Week 1</a>  | Introductie, College over Progressive enhancement + briefing opdracht 1.1 | College Browser detect + presentaties opdracht 1.1 + briefing opdracht 1.2 Fork je OBA  | Feedbackgesprekken + Bowlen! |
-| <a href=#week-2>Week 2</a>  | College Feature detect + Briefing opdracht 2  | College Browsers + werken aan de opdracht | Feedbackgesprekken  |
-| <a href=#week-3>Week 3</a>  | College Notificaties + werken aan de opdracht  |  Werken aan de opdracht | Beoordelingsgesprekken  |
+## Live Demo
 
+[Live Demo](https://zeijls.github.io/web-app-from-scratch-1920/)
 
+## Week 1
 
-## Programma
+### Opdracht 1.1
 
-### Week 1
-Het web is voor iedereen. Leren over Progressive enhancement en kennismaken met testen en het device lab. [Planning week 1](./slides/Week1.png)
-
-#### Woensdag
-- [Les 1 - Progressive enhancement & Briefing Opdracht 1.1](./slides/BT1920%20College%20Les1%20-%20Progressive%20Enhancement.pdf)
 - [Opdracht 1.1 - Breek het web](Opdracht1.1.md)
 
-#### Weekly Nerd
-Sanne 't Hooft over Interactie. Woensdag 11 Maart, 16:00 in het minorlokaal.
+### Opdracht 1.2
 
-#### Donderdag
-- [Les 2 - Features testen & Briefing opdracht 1.2](./slides/BT1920%20College%20Les2%20-%20Progressive%20Enhancement.pdf)
 - [Opdracht 1.2 - Fork je OBA](Opdracht1.2.md)
 
-Deze les gaan we onderstaande artikelen bespreken:
-- [Everyone has JavaScript, right? by Stuart Langridge](https://kryogenix.org/code/browser/everyonehasjs.html)
-- [The Web I Want by Chris James](https://dev.to/quii/the-web-i-want-43o)
+## Opdracht
 
+- Data moet vanuit een API worden gerenderd in de HTML
+- De data uit de API wordt asynchroon opgehaald
+- Voor het oog is er een overzichts en detailpagina met gebruik van een router (single page web app)
+- De code is opgedeeld in modules
+- De code visueel maken dmv een Actor Diagram en Interactive Diagram
+- De applicatie bevat states
+- De code is dynamisch
 
-#### Vrijdag
-Feedbackgesprekken opdracht 1.2 n groepjes en studetnassistenten en docenten.
+## Concept
 
-Deze les gaan we onderstaande artikel bespreken:
-- [Lezen: Understanding Progressive Enhancement by Aaron Gustafson](https://alistapart.com/article/understandingprogressiveenhancement)
+Op de webapplicatie zijn alle schilderijen van Rembrandt van Rijn in het Rijksmuseum weergegeven. Zodra een schilderij wordt geselecteerd worden de details weergegeven. Als het ophalen van de schilderijen lang duurt is er een loadingstate.
 
+## De structuur
 
+# Actor Diagram
 
+![Actor Diagram](./img/actordiagram.jpg)
 
+# Interactive Diagram
 
-### Week 2
-Wat laat je zien als een browser of gebruiker een 'enhancement' niet kan tonen of zien? Hoe doe je Feature Detection en wat doe je als een techniek niet werkt of wordt ondersteund? [Planning week 2](./slides/Week2.png)
+![Interactive Diagram](./img/interactiveDiagram.png)
 
-#### Woensdag
-- [Les 3 - Over Feature detect & Briefing opdracht 2]()
-- [Opdracht 2 - Progressive Enhanced Browser Technologie](Opdracht2.md)
+## Gebruik
 
-Deze les gaan we onderstaande artikelen bespreken:
-- [The Role of Enhancement in Web Design by Raluca Budiu / Nielsen Norman Group](https://www.nngroup.com/articles/enhancement/)
-- [Accessibility Through Semantic HTML by Laura Kalbag](https://24ways.org/2017/accessibility-through-semantic-html/)
+Ga via de terminal naar de folder waar je het projet wilt plaatsen:
 
+```
+cd Pth/To/Folder
+```
 
-#### Weekly Nerd
-PE bij de Voorhoede.
+Clone de repository
 
+```
+    git clone https://github.com/Zeijls/web-app-from-scratch-1920.git
+    cd web-app-from-scratch-1920
+```
 
-#### Donderdag
-- [Les 4 - Over Browsers]()
+Na het clonen, open het `index.html` bestnd in je localhost.
 
-Deze les gaan we onderstaande artikelen bespreken:
-- [The accessibility mindset by Eric Eggert](https://24ways.org/2015/the-accessibility-mindset/)
-- [HTML: The Inaccessible Parts](https://daverupert.com/2020/02/html-the-inaccessible-parts/)
+## API
 
+In deze applicatie gebruik ik de API van het Rijksmuseum. In deze API is een groot deel van de collectie van het Rijksmuseum verzameld. Alle details van de schilerderijen worden hierin weergegeven. Vanwege copyright restricties zijn kunstwerken van de 20e en 21e eeuw niet toegevoegd in deze API.
 
-#### Vrijdag
-Code review en feedbackgesprekken opdracht 2.
+Om gebruik te maken van de API van het Rijksmuseum heb je een key nodig. Deze kun je aanvragen bij de gevanceerde account instellingen op de site van het Rijksumseum. https://www.rijksmuseum.nl/en/rijksstudio/
 
+Ik heb alleen de schilderijen van Rembrandt van Rijn gebruikt door de volgende endpoints te gebruiken.
 
+> const rijksAPI = baseURl + key + involvedMaker + maker;
 
+Er bleven 9 schilderijen over. Vanaf dit punt heb ik deze schilderijen verder uitgezocht door middel van Map, Filter en Reduce.
 
-### Week 3
-Deze week werken we verder aan opdracht 2. [Planning week 3](./slides/Week3.png)
+## To Do
 
+Week 1
 
-#### Woensdag
-- [Les 5 - Over Notificaties]()
+- [x] 2. Readme afmaken
+- [x] 3. Loading data asynchronously from an API
+- [x] MAP
+- [x] FILTER
+- [x] REDUCE
+- [x] Issues verwerken
 
-Deze les gaan we onderstaande artikelen bespreken:
-- [Progressive Enhancement and Data Visualizations by Chris Coyier](https://css-tricks.com/progressive-enhancement-data-visualizations/)
-- [Make the Web Work For Everyone by Justin Crawford, Chris Mills, Ali Spivak](https://hacks.mozilla.org/2016/07/make-the-web-work-for-everyone/)
+Week 2
 
+- [x] Actor diagram.
+- [x] Interactive diagram
+- [x] Refactor code
+- [x] Key aanpassen in url (Issue Marten)
 
-#### Weekly Nerd
-Op bezoek bij Bol.com
+Week 3
 
+- [x] Functies opdelen in modules
+- [x] States toevoegen (Feedback loading)
+- [x] 3. Reflect on work (Tuesday)
 
-#### Donderdag
-Verder werken aan opdracht 2
+- [x] Nadelen client side renderen van HTML kunnen benoemen (Zoeken in aantekeningen)
+- [x] Criteria nog goed doorlezen
+- [x] Beoordeling voorbereiden
+- [x] Best practices doorlezen
 
+## Wish List
 
+- [ ] Schilderijen van Rembrandt van Rijn ook in een filter zetten
+- [ ] Betere flow
 
-#### Vrijdag
-Code review en beoordelingsgesprekken opdracht 2.
+## Bronnen
 
+- [Promise Then](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+- [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- [Routen](http://projects.jga.me/routie/)
+- [Update UI from route](https://github.com/cmda-minor-web/web-app-from-scratch-1920/tree/master/examples)
+- [Insert Adjacent HTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML)
+- [Inner HTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+- [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+- [Filter](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- [While](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
 
+## Credits
 
-
-
-
-
-
-
-
-
-
-
-
-
+- Marjolein Aardewijn, heeft me geholpen met het werkend krijgen van de loading state
+- Joost Faber, zijn introductie les over de routie heeft me geholpen het te begrijpen en toe te passen
+- Robin Stut, heeft mij geholpen met de promise, hij gaf een error aan de de promise niet resolved was, terwijl de console dit wel aangaf.
+- Joost Faber, hij heeft mij geholpen met het refactoren van mijn routie
+- Robin Stut, heeft mij tijdens een nude klasje uitgelegd hoe je adv. insertAdjacentHTML de data die je wilt kunt renderen
+- Bas, heeft mij geholpen met de berekening in de reduce
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
