@@ -33,7 +33,7 @@ Voor deze oefening moesten we in groepjes van 6 studenten alle 8 features onderv
 - Beschrijf hoe je dit kan fiksen
 
 Vervolgens hebben wij de volgende poster gemaakt met onze bevindingen;
-![Poster Features](/docs/img/PosterFeatures.png)
+![PosterFeatures](https://user-images.githubusercontent.com/45422060/76773183-595f4480-67a2-11ea-8789-28e4290a0994.png)
 
 ## 1. Afbeeldingen uitzetten
 
