@@ -159,15 +159,15 @@ Tijdens het bouwen van de website werkte ik met Chrome. Voor nu ga ik kijken of 
 
 Voor firefox zie ik eigenlijk geen verschillen met Chrome. Alle features werken naar behoren. Het enige verschil wat mij opviel is dat de afbeeldingen als een soort scanner worden geladen, dit had ik bij Chrome nog nooit gezien.
 
-[Homepage Firefox](/docs/img/homepageFirefox.png)
-[Detail Firefox](/docs/img/detailPageFirefox.png)
+<img width="1440" alt="homepageFirefox" src="https://user-images.githubusercontent.com/45422060/76773917-806a4600-67a3-11ea-835c-793296712537.png">
+<img width="1440" alt="detailPageFirefox" src="https://user-images.githubusercontent.com/45422060/76773951-8eb86200-67a3-11ea-8a07-882b95dddaa9.png">
 
 ### Brave
 
 In eerste instantie laden de afbeeldingen erg sloom, en het ziet er naar uit dat de Skeleton UI nog niet optimaal is. De foto's verschuiven nog kleine stukjes tijdens het laden. Verder werken alle features naar behoren.
 
-[Homepage Brave](/docs/img/homePageBrave.png)
-[Detail Brave](/docs/img/detailPageBrave.png)
+<img width="1440" alt="homePageBrave" src="https://user-images.githubusercontent.com/45422060/76773984-9d067e00-67a3-11ea-907e-73ad3d66f116.png">
+<img width="1440" alt="detailPageBrave" src="https://user-images.githubusercontent.com/45422060/76774021-aa236d00-67a3-11ea-896a-01e8a3853505.png">
 
 ## Screenreader
 
