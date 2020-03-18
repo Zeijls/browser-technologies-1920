@@ -3,24 +3,44 @@
 
 <body>
   <%- include('partials/header') %>
+  <h2>Whats your name?</h2>
 
-  <main>
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Simone"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="van Zeijl"><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </form>
 
-    <div class="wrapper">
-      <ul id="rijksContainer">
-        <% data.artObjects.map(function(item) { %>
+  <h2>Wat vind jij het leukst?</h2>
 
-        <li>
-          <% console.log(item.webImage) %>
-          <a href="/paintings/<%= item.objectNumber %>">
-            <img src="<%= item.webImage.url %>">
-          </a>
-        </li>
-        <%  }); %>
-      </ul>
-    </div>
+  <form>
+    <input type="radio" id="HTML" name="HTML" value="HTML">
+    <label for="HTML">HTML</label><br>
+    <input type="radio" id="CSS" name="CSS" value="CSS">
+    <label for="CSS">CSS</label><br>
+    <input type="radio" id="JavaScript" name="JavaScript" value="JavaScript">
+    <label for="JavaScript">JavaScript</label>
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </form>
 
-  </main>
+  <h2>Wanneer ben je begonnen met Coderen & Programmeren?</h2>
+
+  <form>
+    <form action="/action_page.php">
+      <label for="startDatum">Start datum:</label>
+      <input type="date" id="startDatum" name="startDatum">
+      <input type="submit">
+    </form>
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </form>
+
+  <button type="button">Verzenden</button>
+
 
 </body>
 

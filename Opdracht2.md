@@ -42,13 +42,27 @@ Schets eerst een wireflow en/of breakdown-schets met hoe de demo moet gaan werke
 Voor deze laag beginnen we met het uitschakelen van de CSS en Javascript, en kijken of alles naar behoren werkt.
 <img width="577" alt="1" src="https://user-images.githubusercontent.com/45422060/76963469-5d65a080-6921-11ea-9ea3-629ae9022725.png">
 
+Versie 2
+<img width="840" alt="2 1" src="https://user-images.githubusercontent.com/45422060/76973659-893c5280-6930-11ea-9ef5-f4fec0cd5bc1.png">
+
 #### Usable => Design Patterns CSS (Laag 2)
 
 <img width="600" alt="2" src="https://user-images.githubusercontent.com/45422060/76963574-87b75e00-6921-11ea-8444-4d40ab2ab107.png">
 
+Versie 2
+<img width="900" alt="2 2" src="https://user-images.githubusercontent.com/45422060/76973662-89d4e900-6930-11ea-8d47-acfbfe616056.png">
+
 #### Pleasurable => Javascript (Laag 3)
 
 <img width="362" alt="3" src="https://user-images.githubusercontent.com/45422060/76963578-88e88b00-6921-11ea-97f9-5fc9886b0a8f.png">
+
+Versie 2
+<img width="883" alt="2 3" src="https://user-images.githubusercontent.com/45422060/76973664-8b061600-6930-11ea-9fe0-c8fb3cf50962.png">
+
+#### Bronnen
+
+- [CODEPEN FORM](https://codepen.io/balapa/pen/XbXVRg)
+- [W3SCHOOLS](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_reset)
 
 ### Criteria
 

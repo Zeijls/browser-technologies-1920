@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3000;
-const paintingData = require("./modules/api");
+// const paintingData = require("./modules/api");
 
 app.use(express.static("static"));
 
@@ -10,11 +10,9 @@ app.set("views", "views");
 
 console.log("test");
 
-// app.get("/", (req, res) => {
-//   paintingData.getPaintings().then(function(paintingData) {
-//     res.render("overview", { data: paintingData });
-//   });
-// });
+app.get("/", (req, res) => {
+  res.render("overview");
+});
 
 // app.get("/paintings/:id", (req, res) => {
 //   const id = req.params.id;
@@ -27,4 +25,4 @@ console.log("test");
 //   });
 // });
 
-// app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
