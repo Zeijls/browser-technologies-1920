@@ -3,43 +3,108 @@
 
 <body>
   <%- include('partials/header') %>
-  <h2>Whats your name?</h2>
 
-  <form>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="Simone"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="van Zeijl"><br><br>
-    <input type="submit" value="Submit">
-    <input type="reset">
-  </form>
+  <div class="container slider-one-active">
+    <div class="steps">
+      <div class="step step-one">
+        <div class="liner"></div>
+        <span>Naam</span>
+      </div>
+      <div class="step step-two">
+        <div class="liner"></div>
+        <span>Vraag 1</span>
+      </div>
+      <div class="step step-three">
+        <div class="liner"></div>
+        <span>Datum</span>
+      </div>
+    </div>
+    <div class="line">
+      <div class="dot-move"></div>
+      <div class="dot zero"></div>
+      <div class="dot center"></div>
+      <div class="dot full"></div>
+    </div>
 
-  <h2>Wat vind jij het leukst?</h2>
+    <div class="slider-ctr">
+      <div class="slider">
+        <form class="slider-form slider-one">
+          <h2>Whats your name?</h2>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="Simone"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="van Zeijl"><br><br>
+          <input type="reset">
+          <button class="first next">Next Step</button>
+        </form>
+        <form class="slider-form slider-two">
+          <h2>Wat vind jij het leukst?</h2>
+          <input type="radio" id="HTML" name="HTML" value="HTML">
+          <label for="HTML">HTML</label><br>
+          <input type="radio" id="CSS" name="CSS" value="CSS">
+          <label for="CSS">CSS</label><br>
+          <input type="radio" id="JavaScript" name="JavaScript" value="JavaScript">
+          <label for="JavaScript">JavaScript</label>
+          <input type="submit" value="Submit">
+          <input type="reset">
+          <button class="second next">Next Step</button>
+        </form>
+        <form class="slider-form slider-three">
+          <h2>Wanneer ben je begonnen met Coderen & Programmeren?</h2>
+          <form action="/action_page.php">
+            <label for="startDatum">Start datum:</label>
+            <input type="date" id="startDatum" name="startDatum">
+            <input type="submit">
+          </form>
+          <input type="submit" value="Submit">
+          <input type="reset">
+        </form>
+        <a class="reset" href="/" target="_blank">Reset</a>
+      </div>
+    </div>
+    <!-- <section class="Vraag1">
+    <h2>Whats your name?</h2>
 
-  <form>
-    <input type="radio" id="HTML" name="HTML" value="HTML">
-    <label for="HTML">HTML</label><br>
-    <input type="radio" id="CSS" name="CSS" value="CSS">
-    <label for="CSS">CSS</label><br>
-    <input type="radio" id="JavaScript" name="JavaScript" value="JavaScript">
-    <label for="JavaScript">JavaScript</label>
-    <input type="submit" value="Submit">
-    <input type="reset">
-  </form>
-
-  <h2>Wanneer ben je begonnen met Coderen & Programmeren?</h2>
-
-  <form>
-    <form action="/action_page.php">
-      <label for="startDatum">Start datum:</label>
-      <input type="date" id="startDatum" name="startDatum">
-      <input type="submit">
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="Simone"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="van Zeijl"><br><br>
+      <input type="submit" value="Submit">
+      <input type="reset">
     </form>
-    <input type="submit" value="Submit">
-    <input type="reset">
-  </form>
+  </section>
 
-  <button type="button">Verzenden</button>
+
+  <section class="Vraag2">
+    <h2>Wat vind jij het leukst?</h2>
+    <form>
+      <input type="radio" id="HTML" name="HTML" value="HTML">
+      <label for="HTML">HTML</label><br>
+      <input type="radio" id="CSS" name="CSS" value="CSS">
+      <label for="CSS">CSS</label><br>
+      <input type="radio" id="JavaScript" name="JavaScript" value="JavaScript">
+      <label for="JavaScript">JavaScript</label>
+      <input type="submit" value="Submit">
+      <input type="reset">
+    </form>
+  </section>
+
+  <section class="Vraag3">
+    <h2>Wanneer ben je begonnen met Coderen & Programmeren?</h2>
+
+    <form>
+      <form action="/action_page.php">
+        <label for="startDatum">Start datum:</label>
+        <input type="date" id="startDatum" name="startDatum">
+        <input type="submit">
+      </form>
+      <input type="submit" value="Submit">
+      <input type="reset">
+    </form>
+  </section>
+
+  <button type="button">Verzenden</button> -->
 
 
 </body>
