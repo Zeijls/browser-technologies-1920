@@ -8,6 +8,7 @@
 - [Wireflows](#Wireflows)
 - [Installatie](#Installatie)
 - [Artikelen](#Artikelen)
+- [Opdrachten](#Opdrachten)
 - [To Do](#To-Do)
 - [Bronnen](#Bronnen)
 - [Credits](#Credits)
@@ -135,9 +136,17 @@ Door middel van ejs kun je html renderen in je bestanden. Om ejc te installeren 
 Ik maak van alle artikelen een aantekening. Deze hou ik bij via Github Pages.
 [Github Aantekeningen](https://minor-web-dev.gitbook.io/browser-technologies/)
 
+## Opdrachten
+
+Deze opdrachten staan in mijn WIKI
+[Browser Onderzoek](https://github.com/Zeijls/browser-technologies-1920/wiki/Browser-Onderzoek)
+[Device Onderzoek](https://github.com/Zeijls/browser-technologies-1920/wiki/Device-onderzoek)
+[Features](https://github.com/Zeijls/browser-technologies-1920/wiki/Features)
+[Screenreader](https://github.com/Zeijls/browser-technologies-1920/wiki/Screenreader)
+
 ## To Do
 
-- Heroku laten werken
+- [ ] Heroku laten werken
 
 ## Bronnen
 
