@@ -147,6 +147,10 @@ Deze opdrachten staan in mijn WIKI
 ## To Do
 
 - [ ] Heroku laten werken
+- [ ] Issue feedback Menno verwerken (Screenreader verder uitbreiden)
+- [x] Artikelen lezen
+- [ ] Object detection uitzoeken (JS)
+- [ ] Opdracht 2
 
 ## Bronnen
 
