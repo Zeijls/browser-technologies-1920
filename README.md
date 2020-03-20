@@ -1,17 +1,29 @@
 # Browser Technologies @cmda-minor-web 1920
 
-![Overzichtspagina](img/overview.png)
-![Detailpagina](img/detail.png)
-
 ## Inhoudspagina
 
+- [Feedback](#Feedback)
+- [Concept](#Concept)
 - [Live Demo](#Live-Demo)
 - [Opdracht](#Opdracht)
 - [Opdracht 1.1 / 1.2](#Week-1)
 
+## Feedback
+
+-
+
+## Concept
+
+Je kunt verschillende vragen beantwoorden in de enquete
+<img width="1222" alt="Screenshot 2020-03-20 at 13 42 02" src="https://user-images.githubusercontent.com/45422060/77164557-d9422300-6ab0-11ea-9c25-7220dabaf842.png">
+Zodra je de antwoorden wilt opslaan ontvang je een linkje waarmee je de enquete later kunt vervolgen.
+<img width="1440" alt="Screenshot 2020-03-20 at 13 42 28" src="https://user-images.githubusercontent.com/45422060/77164559-d9dab980-6ab0-11ea-8f78-b4eae7c5f7b2.png">
+Zodra je op versturen klikt krijg je een overzicht van de beantwoorde vragen. Hier komt een button waarbij de de antwoorden kunt bevestigen. Zodra de enquete is bevestigd krijg je nog een laatste bericht met een bedankje voor het invullen van de enquete. Zo ver was ik nu nog niet gekomen.
+
 ## Live Demo
 
 [Live Demo]()
+De live demo werkt nog niet.
 
 ## Leerdoelen
 
