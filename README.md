@@ -17,7 +17,9 @@ De live demo werkt nog niet.
 
 ## Feedback
 
--
+- Is de opbouw van de readme zo goed?
+- Klopt mijn opbouw in de lagen zoals ik het nu wil aanpakken aan de hand van Progressive Enhancement?
+- Is mijn eerste versie van de HTMl nu netjes opgebouwd op basis van de theorie uit de gelezen artikelen?
 
 ## Concept
 
@@ -48,15 +50,17 @@ Zodra de enquete is bevestigd krijg je nog een laatste bericht met een bedankje 
 
 #### Functional / Reliable
 
+In de functional Laag kun je de vragen van de enquete invullen en opslaan om later te hervatten. Je kunt je antwoorden opsturen, dan krijg je een overzicht van de gegeven antwoorden, en vervolgens een bevestiging dat de enquete is verstuurd.
+
 <details>
   <summary> Semantische HTML (Laag 1)
 </summary>
-  Voor deze laag beginnen we met het uitschakelen van de CSS en Javascript, en kijken of alles naar behoren werkt.
   <img width="840" alt="2 1" src="https://user-images.githubusercontent.com/45422060/76973659-893c5280-6930-11ea-9ef5-f4fec0cd5bc1.png">
-    
  </details>
 
 #### Usable
+
+In de usable laag ziet het formulier er heel netjes uit, maar de werking van het formulier is in principe hetzelfde als bij de functional laag. Er wordt wel een navigatie balk aan het concept toegevoegd zodat het voor de gebruiker duidelijk is hoeveel vragen er nog op hem te wachten staan.
 
 <details>
 <summary>Design Patterns CSS (Laag 2) </summary>
@@ -64,6 +68,8 @@ Zodra de enquete is bevestigd krijg je nog een laatste bericht met een bedankje 
 </details>
 
 #### Pleasurable
+
+In de pleasurable laag wordt de volgende vraag pas beschikbaar als het antwoord naar behoren is ingevuld. Verder kan de gebruiker in deze laag zijn formulier opslaan, zonder het linkje in de eerste twee lagen.
 
 <details>
 <summary> Javascript (Laag 3) </summary>
@@ -121,6 +127,11 @@ Nodemon kan de wijzigingen die je toepast in de applicatie meteen doorvoegen naa
 Door middel van ejs kun je html renderen in je bestanden. Om ejc te installeren gebruik je het volgende commando;
 
 > npm install ejs
+
+## Artikelen
+
+Ik maak van alle artikelen een aantekening. Deze hou ik bij via Github Pages.
+![Github Aantekeningen](https://minor-web-dev.gitbook.io/browser-technologies/)
 
 ## Bronnen
 
