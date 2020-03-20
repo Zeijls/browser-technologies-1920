@@ -133,7 +133,7 @@ Door middel van ejs kun je html renderen in je bestanden. Om ejc te installeren 
 ## Artikelen
 
 Ik maak van alle artikelen een aantekening. Deze hou ik bij via Github Pages.
-![Github Aantekeningen](https://minor-web-dev.gitbook.io/browser-technologies/)
+[Github Aantekeningen](https://minor-web-dev.gitbook.io/browser-technologies/)
 
 ## To Do
 
