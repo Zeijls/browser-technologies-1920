@@ -139,10 +139,10 @@ Ik maak van alle artikelen een aantekening. Deze hou ik bij via Github Pages.
 ## Opdrachten
 
 Deze opdrachten staan in mijn WIKI
-[Browser Onderzoek](https://github.com/Zeijls/browser-technologies-1920/wiki/Browser-Onderzoek)
-[Device Onderzoek](https://github.com/Zeijls/browser-technologies-1920/wiki/Device-onderzoek)
-[Features](https://github.com/Zeijls/browser-technologies-1920/wiki/Features)
-[Screenreader](https://github.com/Zeijls/browser-technologies-1920/wiki/Screenreader)
+[Browser Onderzoek](https://github.com/Zeijls/browser-technologies-1920/wiki/Browser-Onderzoek) <br>
+[Device Onderzoek](https://github.com/Zeijls/browser-technologies-1920/wiki/Device-onderzoek)<br>
+[Features](https://github.com/Zeijls/browser-technologies-1920/wiki/Features)<br>
+[Screenreader](https://github.com/Zeijls/browser-technologies-1920/wiki/Screenreader)<br>
 
 ## To Do
 
