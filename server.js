@@ -11,18 +11,14 @@ app.set("views", "views");
 console.log("test");
 
 app.get("/", (req, res) => {
-  res.render("overview");
+  console.log(req.query);
+  res.render("overview", { res: req.query });
 });
 
-// app.get("/paintings/:id", (req, res) => {
-//   const id = req.params.id;
-//   paintingData.getPaintings().then(function(paintingData) {
-//     function findPainting(painting) {
-//       return painting.objectNumber === id;
-//     }
-//     const newId = paintingData.artObjects.find(findPainting);
-//     res.render("detail", { paintingData: newId });
-//   });
-// });
+app.get("/save", (req, res) => {
+  let fullUrl = req.protocol + "://" + req.get("host") + req.originalUrl;
+  let destination = fullUrl.replace("save", "");
+  res.render("save", { url: destination });
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));

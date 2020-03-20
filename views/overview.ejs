@@ -4,108 +4,62 @@
 <body>
   <%- include('partials/header') %>
 
-  <div class="container slider-one-active">
-    <div class="steps">
-      <div class="step step-one">
-        <div class="liner"></div>
-        <span>Naam</span>
-      </div>
-      <div class="step step-two">
-        <div class="liner"></div>
-        <span>Vraag 1</span>
-      </div>
-      <div class="step step-three">
-        <div class="liner"></div>
-        <span>Datum</span>
-      </div>
-    </div>
-    <div class="line">
-      <div class="dot-move"></div>
-      <div class="dot zero"></div>
-      <div class="dot center"></div>
-      <div class="dot full"></div>
-    </div>
+  <section class="tabs">
+    <!-- Tab 1 -->
+    <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+    <label for="tab-1" class="tab-label-1">Introductie</label>
 
-    <div class="slider-ctr">
-      <div class="slider">
-        <form class="slider-form slider-one">
-          <h2>Whats your name?</h2>
-          <label for="fname">First name:</label><br>
-          <input type="text" id="fname" name="fname" value="Simone"><br>
-          <label for="lname">Last name:</label><br>
-          <input type="text" id="lname" name="lname" value="van Zeijl"><br><br>
-          <input type="reset">
-          <button class="first next">Next Step</button>
-        </form>
-        <form class="slider-form slider-two">
-          <h2>Wat vind jij het leukst?</h2>
-          <input type="radio" id="HTML" name="HTML" value="HTML">
-          <label for="HTML">HTML</label><br>
-          <input type="radio" id="CSS" name="CSS" value="CSS">
-          <label for="CSS">CSS</label><br>
-          <input type="radio" id="JavaScript" name="JavaScript" value="JavaScript">
-          <label for="JavaScript">JavaScript</label>
-          <input type="submit" value="Submit">
-          <input type="reset">
-          <button class="second next">Next Step</button>
-        </form>
-        <form class="slider-form slider-three">
-          <h2>Wanneer ben je begonnen met Coderen & Programmeren?</h2>
-          <form action="/action_page.php">
-            <label for="startDatum">Start datum:</label>
-            <input type="date" id="startDatum" name="startDatum">
-            <input type="submit">
-          </form>
-          <input type="submit" value="Submit">
-          <input type="reset">
-        </form>
-        <a class="reset" href="/" target="_blank">Reset</a>
-      </div>
-    </div>
-    <!-- <section class="Vraag1">
-    <h2>Whats your name?</h2>
+    <!-- Tab 2 -->
+    <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" value="{{ res.firstname }}" />
+    <label for="tab-2" class="tab-label-2">Vraag1</label>
 
-    <form>
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" value="Simone"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value="van Zeijl"><br><br>
-      <input type="submit" value="Submit">
-      <input type="reset">
-    </form>
+    <!-- Tab 3 -->
+    <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+    <label for="tab-3" class="tab-label-3">Vraag2</label>
+
+    <!-- Tab 4 -->
+    <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+    <label for="tab-4" class="tab-label-4">Vraag3</label>
+
   </section>
+  <!-- Tab Content -->
+
+  <form method="GET">
+    <fieldset>Introduction
+
+      <div>
+        <label for="firstName">First Name </label>
+        <input required type="text" id="firstname" name="firstname" placeholder="Your name.."
+          value=<%= res.firstname %>>
+        <label for="lastName">Last Name </label>
+        <input required type="text" id="lastname" name="lastname" placeholder="Your last name.."
+          value=<%= res.lastname %>>
 
 
-  <section class="Vraag2">
-    <h2>Wat vind jij het leukst?</h2>
-    <form>
-      <input type="radio" id="HTML" name="HTML" value="HTML">
-      <label for="HTML">HTML</label><br>
-      <input type="radio" id="CSS" name="CSS" value="CSS">
-      <label for="CSS">CSS</label><br>
-      <input type="radio" id="JavaScript" name="JavaScript" value="JavaScript">
-      <label for="JavaScript">JavaScript</label>
-      <input type="submit" value="Submit">
-      <input type="reset">
-    </form>
-  </section>
+      </div>
 
-  <section class="Vraag3">
-    <h2>Wanneer ben je begonnen met Coderen & Programmeren?</h2>
+      <div>
+        <label for="HTML">HTML
+          <input required type="radio" id="HTML" name="code" value="HTML" <% if(res.code == 'HTML') { %>
+            checked="checked" <% } %> />
+        </label>
+        <label for="CSS">CSS
+          <input type="radio" id="CSS" name="code" value="CSS" <% if(res.code == 'CSS') { %> checked="checked"
+            <% } %> />
+        </label><br />
+        <label for="JavaScript">JavaScript
+          <input type="radio" id="JavaScript" name="code" value="JavaScript" <% if(res.code == 'JavaScript') { %>
+            checked="checked" <% } %> />
+        </label>
+      </div>
 
-    <form>
-      <form action="/action_page.php">
-        <label for="startDatum">Start datum:</label>
-        <input type="date" id="startDatum" name="startDatum">
-        <input type="submit">
-      </form>
-      <input type="submit" value="Submit">
-      <input type="reset">
-    </form>
-  </section>
+      <div></div>
 
-  <button type="button">Verzenden</button> -->
+      <button formnovalidate formaction="/save" type="submit" name="state" value="save">save</button>
+      <button formaction="/final" type="submit">Volgende vraag</button>
 
+    </fieldset>
+  </form>
 
 </body>
 
