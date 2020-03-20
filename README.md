@@ -16,7 +16,7 @@
 ## Live Demo
 
 [Live Demo]()
-De live demo werkt nog niet.
+De live demo werkt nog niet. Moet ik nog deployen via Heroku
 
 ## Feedback
 
@@ -151,6 +151,7 @@ Deze opdrachten staan in mijn WIKI
 - [x] Artikelen lezen
 - [ ] Object detection uitzoeken (JS)
 - [ ] Opdracht 2
+- [x] Readme bijwerken
 
 ## Bronnen
 
