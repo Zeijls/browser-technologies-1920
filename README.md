@@ -7,6 +7,8 @@
 - [Concept](#Concept)
 - [Wireflows](#Wireflows)
 - [Installatie](#Installatie)
+- [Artikelen](#Artikelen)
+- [To Do](#To-Do)
 - [Bronnen](#Bronnen)
 - [Credits](#Credits)
 
@@ -132,6 +134,10 @@ Door middel van ejs kun je html renderen in je bestanden. Om ejc te installeren 
 
 Ik maak van alle artikelen een aantekening. Deze hou ik bij via Github Pages.
 ![Github Aantekeningen](https://minor-web-dev.gitbook.io/browser-technologies/)
+
+## To Do
+
+- Heroku laten werken
 
 ## Bronnen
 
