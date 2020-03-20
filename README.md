@@ -68,7 +68,7 @@ Zodra de enquete is bevestigd krijg je nog een laatste bericht met een bedankje 
 <details>
 <summary> Javascript (Laag 3) </summary>
 <img width="883" alt="2 3" src="https://user-images.githubusercontent.com/45422060/76973664-8b061600-6930-11ea-9fe0-c8fb3cf50962.png">
-<details>
+</details>
 
 ## Installatie
 
