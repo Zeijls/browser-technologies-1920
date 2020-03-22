@@ -179,7 +179,7 @@ Deze opdrachten staan in mijn WIKI
 - [ ] Object detection uitzoeken (JS)
 - [ ] Opdracht 2
 - [x] Readme bijwerken
-- [ ] [Aria label bekijken](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
+- [ ] [Aria label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
 
 ## Bronnen
 
