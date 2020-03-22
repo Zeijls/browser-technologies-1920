@@ -1,15 +1,29 @@
-<p>Final results</p>
+<html>
+<%- include('partials/head') %>
 
-<span id="shirt"><img src="/images/shirt.png"
-        alt="a {{res.color}} shirt containing the text: {{res.shirttext}} in the size {{res.size}} ">
-    <p>{{{res.shirttext}}}</p>
-</span>
-<p>First Name: {{res.firstName}}</p>
-<p>Last Name: {{res.lastName}}</p>
+<body>
+    <%- include('partials/header') %>
 
-<br>
-<p>Favoriete Code {{res.code}}</p>
-<br>
+    <section class="overzicht">
 
-<a href="{{url}}">Edit</a>
-<button>Confirm</button>
+        <h2> Uw antwoorden </h2>
+
+        <div class="antwoord">
+            <h2>Introductie</h2>
+            <p>Uw naam: <%= res.firstname %></p>
+        </div>
+
+        <div class="antwoord">
+            <h2>Welke codetaal vind jij het leukst?</h2>
+            <p>Favoriete Codetaal: <%= res.code %></p>
+        </div>
+
+        <div class="buttons">
+            <button class="btn"><a href="{{url}}">Edit</a></button>
+            <button class="btn" formaction="/confirm" type="send">Confirm</button>
+        </div>
+    </section>
+
+</body>
+
+</html>

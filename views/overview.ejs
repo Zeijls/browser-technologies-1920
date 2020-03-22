@@ -22,44 +22,55 @@
 
   <form method="GET">
     <fieldset>
-
       <div>
         <h2>Introductie</h2>
         <label for="firstName"></label>
-        <input required type="text" id="firstname" name="firstname" placeholder="Whats your name?"
+        <input required type="text" id="firstname" name="firstname" placeholder="Wat is jouw naam?"
           value=<%= res.firstname %>>
 
         <!-- <label for="lastName"></label>
         <input required type="text" id="lastname" name="lastname" placeholder="Your last name.."
           value=<%= res.lastname %>> -->
-
-
       </div>
 
-      <div>
+      <div class="container">
         <h2>Welke codetaal vind jij het leukst?</h2>
-        <label for="HTML">HTML
-          <input required type="radio" id="HTML" name="code" value="HTML" <% if(res.code == 'HTML') { %>
-            checked="checked" <% } %> />
-        </label>
-        <label for="CSS">CSS
-          <input type="radio" id="CSS" name="code" value="CSS" <% if(res.code == 'CSS') { %> checked="checked"
-            <% } %> />
-        </label><br />
-        <label for="JavaScript">JavaScript
-          <input type="radio" id="JavaScript" name="code" value="JavaScript" <% if(res.code == 'JavaScript') { %>
-            checked="checked" <% } %> />
-        </label>
+        <ul>
+          <li>
+            <input required type="radio" id="HTML" name="code" value="HTML" <%
+              if(res.code == 'HTML') { %> checked="checked" <% } %> />
+            <label for="HTML">HTML </label>
+            <div class="check"></div>
+          </li>
+          <li>
+            <input type="radio" id="CSS" name="code" value="CSS" <%
+              if(res.code == 'CSS') { %> checked="checked" <% } %> />
+            <label for="CSS">CSS </label><br />
+            <div class="check">
+              <div class="inside"></div>
+            </div>
+          </li>
+          <li>
+            <input type="radio" id="JavaScript" name="code" value="JavaScript" <% if(res.code == 'JavaScript') { %>
+              checked="checked" <% } %> />
+            <label for="JavaScript">JavaScript </label>
+            <div class="check">
+              <div class="inside"></div>
+            </div>
+          </li>
+        </ul>
       </div>
 
-      <div></div>
-
-      <button formnovalidate formaction="/save" type="submit" name="state" value="save">save</button>
-      <button formaction="/final" type="submit">Versturen</button>
-
+      <div class="buttons">
+        <button class="btn" formnovalidate formaction="/save" type="submit" name="state" value="save">
+          save
+        </button>
+        <button class="btn" formaction="/final" type="submit">
+          Versturen
+        </button>
+      </div>
     </fieldset>
   </form>
-
 </body>
 
 </html>

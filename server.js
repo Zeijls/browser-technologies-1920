@@ -21,4 +21,12 @@ app.get("/save", (req, res) => {
   res.render("save", { url: destination });
 });
 
+app.get("/final", (req, res) => {
+  res.render("final", { res: req.query });
+});
+
+app.get("/confirm", (req, res) => {
+  res.render("confirm");
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
