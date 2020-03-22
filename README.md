@@ -36,6 +36,8 @@ Als je nodejs nog niet hebt kun je dit installeren via de volgende link;
 
 ### NPM
 
+<details>
+<summary> NPM </summary>
 Om te controleren of je NPM al hebt geinstalleerd kun je het volgende commando uitvoeren in je terminal;
 
 > npm -v
@@ -44,8 +46,12 @@ Als je NPM nog moet installeren kun je het volgende commando uitvoeren in je ter
 
 > npm install npm@latest -g
 
+</details>
+
 ### Express
 
+<details>
+<summary> Express </summary>
 Om express te installeren heb je een aantal verschillende stappen nodig. Hierbij gaan we ervan uit dat je nodejs succesvol hebt geinstalleerd.
 
 > mkdir myapp
@@ -63,17 +69,29 @@ Installeer express in de dependecies list
 
 > npm install express --save
 
+</details>
+
 ### Nodemon
+
+<details>
+<summary> Nodemon </summary>
 
 Nodemon kan de wijzigingen die je toepast in de applicatie meteen doorvoegen naar je localhost. Hierdoor hoef je niet iedere keer NPM af te sluiten en opnieuw op te starten. Nodemon installeer je op de volgende manier in je dependencies;
 
 > npm install --save-dev nodemon
 
+</details>
+
 ### ejs
+
+<details>
+<summary> ejs </summary>
 
 Door middel van ejs kun je html renderen in je bestanden. Om ejc te installeren gebruik je het volgende commando;
 
 > npm install ejs
+
+</details>
 
 ## Feedback
 
