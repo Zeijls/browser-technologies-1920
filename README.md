@@ -23,6 +23,7 @@ De live demo werkt nog niet. Moet ik nog deployen via Heroku
 ### Nodejs
 
 <details>
+<summary> Nodejs </summary>
 
 Ik had nodejs al geinstalleerd op mijn computer. Om te controleren of NPM al is geintalleerd kun je het volgende commando toepassen in je terminal;
 
