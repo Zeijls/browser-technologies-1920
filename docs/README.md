@@ -1,6 +1,10 @@
-# Browser Technologies @cmda-minor-web 1920
+# Progressive Web App enquete
 
-## Inhoudspagina
+## Browser Technologies @cmda-minor-web 1920
+
+<img width="1222" alt="Screenshot 2020-03-20 at 13 42 02" src="https://user-images.githubusercontent.com/45422060/77164557-d9422300-6ab0-11ea-9c25-7220dabaf842.png">
+
+## Inhoudsopgave
 
 - [Live Demo](#Live-Demo)
 - [Installatie](#Installatie)
