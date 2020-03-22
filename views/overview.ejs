@@ -4,41 +4,40 @@
 <body>
   <%- include('partials/header') %>
 
-  <section class="tabs">
-    <!-- Tab 1 -->
+  <!-- <section class="tabs">
+
     <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
     <label for="tab-1" class="tab-label-1">Introductie</label>
 
-    <!-- Tab 2 -->
     <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" value="{{ res.firstname }}" />
     <label for="tab-2" class="tab-label-2">Vraag1</label>
 
-    <!-- Tab 3 -->
     <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
     <label for="tab-3" class="tab-label-3">Vraag2</label>
 
-    <!-- Tab 4 -->
     <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
     <label for="tab-4" class="tab-label-4">Vraag3</label>
 
-  </section>
-  <!-- Tab Content -->
+  </section> -->
 
   <form method="GET">
-    <fieldset>Introduction
+    <fieldset>
 
       <div>
-        <label for="firstName">First Name </label>
-        <input required type="text" id="firstname" name="firstname" placeholder="Your name.."
+        <h2>Introductie</h2>
+        <label for="firstName"></label>
+        <input required type="text" id="firstname" name="firstname" placeholder="Whats your name?"
           value=<%= res.firstname %>>
-        <label for="lastName">Last Name </label>
+
+        <!-- <label for="lastName"></label>
         <input required type="text" id="lastname" name="lastname" placeholder="Your last name.."
-          value=<%= res.lastname %>>
+          value=<%= res.lastname %>> -->
 
 
       </div>
 
       <div>
+        <h2>Welke codetaal vind jij het leukst?</h2>
         <label for="HTML">HTML
           <input required type="radio" id="HTML" name="code" value="HTML" <% if(res.code == 'HTML') { %>
             checked="checked" <% } %> />

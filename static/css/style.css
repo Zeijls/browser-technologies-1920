@@ -2,93 +2,75 @@
 * Typography
 */
 
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #777;
-  width: 80%;
-  margin: auto;
+html {
+  background-image: url(/docs/img/background.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+}
+
+header {
+  color: white;
   text-align: center;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #777;
+  width: 100%;
+  margin: auto;
+}
+
 /* 
-* Tab
+* Form
 */
 
-.tabs {
-  position: relative;
+form {
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  border-radius: 30px;
 }
 
-.tabs input {
-  position: absolute;
-  z-index: 1000;
-  left: 0px;
-  top: 0px;
-  opacity: 0;
+form fieldset {
+  font-size: 1.5rem;
+  text-align: center;
+  border-style: none;
 }
 
-
-.tabs label:first-of-type {
-  z-index: 4;
+form fieldset div {
+  display: flex;
+  flex-direction: column;
 }
 
-.tab-label-2 {
-  z-index: 3;
+form fieldset div label {
+  text-align: left;
+  font-size: 1rem;
+  margin-left: 10px;
+  margin-bottom: 5px;
 }
 
-.tab-label-3 {
-  z-index: 2;
-}
-
-.tab-label-4 {
-  z-index: 1;
-}
-
-.tabs input:checked+label {
-  background: #fff;
-  z-index: 6;
-}
-
-.content {
-  position: relative;
+form fieldset div input {
   width: 100%;
-  height: 200px;
-  z-index: 5;
-  overflow: hidden;
-  background: #fff;
-}
-
-.content div {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  opacity: 0;
-}
-
-.tabs input.tab-selector-1:checked~.content .question-1,
-.tabs input.tab-selector-2:checked~.content .question-2,
-.tabs input.tab-selector-3:checked~.content .question-3,
-.tabs input.tab-selector-4:checked~.content .question-4 {
-  transform: translateX(0px);
-  z-index: 100;
-  opacity: 1;
-  transition: all ease-out 0.2s 0.1s;
-}
-
-.content .question-1,
-.question-2,
-.question-3,
-.question-4 {
-  position: relative;
-  width: 100%;
-}
-
-form>input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
   box-sizing: border-box;
-  background-color: #777;
+  padding: 15px 20px;
+  background: #fafafa;
+  border: 1px solid transparent;
+  color: #777;
+  border-radius: 50px;
+  font-size: 1rem;
+  margin: 10px 0 50px 0;
+}
+
+form fieldset div h2 {
+  font-size: 1.2rem;
+}
+
+form fieldset div input placeholder {
+  color: #777;
+  font-size: 1em;
+  ;
+
 }
