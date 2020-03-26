@@ -8,8 +8,6 @@ app.use(express.static("static"));
 app.set("view engine", "ejs");
 app.set("views", "views");
 
-console.log("test");
-
 app.get("/", (req, res) => {
   console.log(req.query);
   res.render("overview", { res: req.query });

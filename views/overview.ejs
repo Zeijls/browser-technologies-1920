@@ -4,73 +4,67 @@
 <body>
   <%- include('partials/header') %>
 
-  <!-- <section class="tabs">
+  <body>
+    <div class="form-section">
 
-    <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
-    <label for="tab-1" class="tab-label-1">Introductie</label>
+      <form id="form" class="form" method="GET" autocomplete="off">
 
-    <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" value="{{ res.firstname }}" />
-    <label for="tab-2" class="tab-label-2">Vraag1</label>
-
-    <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
-    <label for="tab-3" class="tab-label-3">Vraag2</label>
-
-    <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
-    <label for="tab-4" class="tab-label-4">Vraag3</label>
-
-  </section> -->
-
-  <form method="GET">
-    <fieldset>
-      <div>
-        <h2>Introductie</h2>
-        <label for="firstName"></label>
         <input required type="text" id="firstname" name="firstname" placeholder="Wat is jouw naam?"
           value=<%= res.firstname %>>
+        <label for="firstName"></label>
 
-        <!-- <label for="lastName"></label>
-        <input required type="text" id="lastname" name="lastname" placeholder="Your last name.."
-          value=<%= res.lastname %>> -->
-      </div>
+        <input required type="text" id="age" name="age" placeholder="Leeftijd" value=<%= res.age %>>
+        <label for="age"></label>
 
-      <div class="container">
-        <h2>Welke codetaal vind jij het leukst?</h2>
-        <ul>
-          <li>
-            <input required type="radio" id="HTML" name="code" value="HTML" <%
-              if(res.code == 'HTML') { %> checked="checked" <% } %> />
-            <label for="HTML">HTML </label>
-            <div class="check"></div>
-          </li>
-          <li>
-            <input type="radio" id="CSS" name="code" value="CSS" <%
-              if(res.code == 'CSS') { %> checked="checked" <% } %> />
-            <label for="CSS">CSS </label><br />
-            <div class="check">
-              <div class="inside"></div>
-            </div>
-          </li>
-          <li>
-            <input type="radio" id="JavaScript" name="code" value="JavaScript" <% if(res.code == 'JavaScript') { %>
-              checked="checked" <% } %> />
-            <label for="JavaScript">JavaScript </label>
-            <div class="check">
-              <div class="inside"></div>
-            </div>
-          </li>
-        </ul>
-      </div>
+        <input required type="text" id="code" name="code" placeholder="Leukste codetaal" value=<%= res.code %>>
+        <label for="code"></label>
 
-      <div class="buttons">
-        <button class="btn" formnovalidate formaction="/save" type="submit" name="state" value="save">
-          save
-        </button>
-        <button class="btn" formaction="/final" type="submit">
-          Versturen
-        </button>
-      </div>
-    </fieldset>
-  </form>
-</body>
+        <input id="email" placeholder="Email *" name="email" type="email" value="" size="30" maxlength="100"
+          aria-describedby="email-notes" autocomplete="nope" required>
+        <label for="email">Email</label>
+
+        <!-- <div class="container">
+          <h2>Welke codetaal vind jij het leukst?</h2>
+          <ul>
+            <li>
+              <input required type="radio" id="HTML" name="code" value="HTML" <%
+                if(res.code == 'HTML') { %> checked="checked" <% } %> />
+              <label for="HTML">HTML </label>
+              <div class="check"></div>
+            </li>
+            <li>
+              <input type="radio" id="CSS" name="code" value="CSS" <%
+                if(res.code == 'CSS') { %> checked="checked" <% } %> />
+              <label for="CSS">CSS </label><br />
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </li>
+            <li>
+              <input type="radio" id="JavaScript" name="code" value="JavaScript" <% if(res.code == 'JavaScript') { %>
+                checked="checked" <% } %> />
+              <label for="JavaScript">JavaScript </label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </li>
+          </ul>
+        </div> -->
+
+
+        <!-- <div class="buttons"> -->
+        <input class="btn" formaction="/final" name="submit" type="submit" id="submit" />
+
+        <input class="save" formaction="/save" name="state" type="submit" id="submit" value="save" />
+
+
+        <!-- </div> -->
+      </form>
+
+
+
+    </div>
+  </body>
+
 
 </html>
