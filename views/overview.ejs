@@ -2,28 +2,35 @@
 <%- include('partials/head') %>
 
 <body>
-  <%- include('partials/header') %>
+  <div class="typewriter">
+    <h1 id="title">Welkom, <%= res.firstname %></h1>
+    <h2>Enquete</h2>
+  </div>
+  <a href="/save" class="save" name="state" type="submit" id="submit" value="save">Save</a>
 
-  <body>
-    <div class="form-section">
+  <div class="form-section">
 
-      <form id="form" class="form" method="GET" autocomplete="off">
+    <!-- <progress id="file" value="25" max="100"></progress> -->
+    <form id="form" class="form" method="GET" autocomplete="off">
+      <label for="firstName" class="name">Naam</label>
+      <input required type="text" id="firstname" name="firstname" placeholder="Naam" value=<%= res.firstname %>>
 
-        <input required type="text" id="firstname" name="firstname" placeholder="Wat is jouw naam?"
-          value=<%= res.firstname %>>
-        <label for="firstName"></label>
+      <label for="age" class="age">Leeftijd</label>
+      <input required type="text" id="age" name="age" placeholder="Leeftijd" value=<%= res.age %>>
 
-        <input required type="text" id="age" name="age" placeholder="Leeftijd" value=<%= res.age %>>
-        <label for="age"></label>
+      <label for="code">Favoriete codetaal</label>
+      <input required type="text" id="code" name="code" placeholder="Favoriete codetaal" value=<%= res.code %>>
 
-        <input required type="text" id="code" name="code" placeholder="Leukste codetaal" value=<%= res.code %>>
-        <label for="code"></label>
+      <label for="email">Email</label>
+      <input required type="email" id="email" name="email" placeholder="Email" value="<%= res.email %>" size="30"
+        maxlength="100" aria-describedby="email-notes" autocomplete="nope">
 
-        <input id="email" placeholder="Email *" name="email" type="email" value="" size="30" maxlength="100"
-          aria-describedby="email-notes" autocomplete="nope" required>
-        <label for="email">Email</label>
 
-        <!-- <div class="container">
+      <!-- <label for="agree" class="side-label">Ik ga akkoord dat deze data wordt gebruikt voor het verbeteren van de
+        minor</label>
+      <input required id="agree" type="checkbox" name="agree" value="check"> -->
+
+      <!-- <div class="container">
           <h2>Welke codetaal vind jij het leukst?</h2>
           <ul>
             <li>
@@ -51,20 +58,14 @@
           </ul>
         </div> -->
 
+      <input id="btnAgree" class="btn" formaction="/final" name="submit" type="submit" id="submit" />
+      <!-- <input class="save" formaction="/save" name="state" type="submit" id="submit" value="save" /> -->
 
-        <!-- <div class="buttons"> -->
-        <input class="btn" formaction="/final" name="submit" type="submit" id="submit" />
+    </form>
 
-        <input class="save" formaction="/save" name="state" type="submit" id="submit" value="save" />
-
-
-        <!-- </div> -->
-      </form>
-
-
-
-    </div>
-  </body>
+  </div>
+  <%- include('partials/footer') %>
+</body>
 
 
 </html>

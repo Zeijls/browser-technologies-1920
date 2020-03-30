@@ -20,13 +20,13 @@
         </div>
 
         <div class="antwoord">
-            <h2>Wat vind jij het leukste vak?</h2>
-            <p>Favoriete Codetaal: <%= res.course %></p>
+            <h2>Email</h2>
+            <p>Email: <%= res.email %></p>
         </div>
 
         <div class="buttons">
-            <button class="btn"><a href="{{url}}">Edit</a></button>
-            <button class="btn" formaction="/confirm" type="send">Confirm</button>
+            <button class="btn"><a href="<%= url %>">Edit</a></button>
+            <a href="/confirm" class="btn" type="send">Confirm </a>
         </div>
     </section>
 

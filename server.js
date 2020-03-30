@@ -9,8 +9,10 @@ app.set("view engine", "ejs");
 app.set("views", "views");
 
 app.get("/", (req, res) => {
-  console.log(req.query);
-  res.render("overview", { res: req.query });
+  let fullUrl = req.protocol + "://" + req.get("host") + req.originalUrl;
+  let destination = fullUrl.replace("final", "");
+
+  res.render("overview", { res: req.query, url: destination });
 });
 
 app.get("/save", (req, res) => {
@@ -20,7 +22,10 @@ app.get("/save", (req, res) => {
 });
 
 app.get("/final", (req, res) => {
-  res.render("final", { res: req.query });
+  let fullUrl = req.protocol + "://" + req.get("host") + req.originalUrl;
+  let destination = fullUrl.replace("final", "");
+
+  res.render("final", { res: req.query, url: destination });
 });
 
 app.get("/confirm", (req, res) => {
