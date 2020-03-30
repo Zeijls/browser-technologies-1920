@@ -9,13 +9,9 @@
   <!-- <a href="/save" class="save" name="state" type="submit" id="submit" value="save" save-btn>Save</a> -->
 
   <!-- <button class="btn" delete-btn>Delete answers</button> -->
-  <button id="LocalStorage" class="btn">Local Storage</button>
+  <!-- <button id="LocalStorage" class="btn">Local Storage</button> -->
 
   <main>
-    <section>
-      <div id="LocalStorageOutput">
-      </div>
-
       <form id="form" class="form" method="GET" autocomplete="off" data-new-list-form>
         <input id="input-1" required type="text" id="firstname" data-new-list-input name="firstname" placeholder="Peter"
           value="<%= res.firstname %>" autofocus />
@@ -45,7 +41,7 @@
           <p class="tip">Volgende vraag; ENTER</p>
         </label>
         <input id="input-4" required type="text" id="teacher" data-new-list-input name="teacher"
-          placeholder="Koop Reynders" value="<%= res.teacher %>">
+          placeholder="Robin Stut" value="<%= res.teacher %>">
         <label for="input-4">
           <span class="label-text">Leukste Docent</span>
           <span class="nav-dot"></span>
@@ -63,13 +59,11 @@
           <p class="tip">Volgende vraag; ENTER</p>
         </label>
 
-        <div class="buttonSend">
         <button formaction="/final" name="submit" type="submit" class="send">Versturen</button>
-      </div>
         <button formaction="/save" formnovalidate type="save" class="save" id="save">Save </button>
+        <button formnovalidate class="reset" type="reset">Reset</button>
 
       </form>
-    </section>
 
   </main>
 
