@@ -3,67 +3,75 @@
 
 <body>
   <div class="typewriter">
-    <h1 id="title">Welkom, <%= res.firstname %></h1>
-    <h2>Enquete</h2>
+    <h1 id="title">Welkom! <%= res.firstname %></h1>
+    <h2>Enquete Minor Web Dev</h2>
   </div>
-  <a href="/save" class="save" name="state" type="submit" id="submit" value="save">Save</a>
+  <!-- <a href="/save" class="save" name="state" type="submit" id="submit" value="save" save-btn>Save</a> -->
 
-  <div class="form-section">
+  <button class="btn" delete-btn>Delete answers</button>
+  <button id="LocalStorage" class="btn">Local Storage</button>
 
-    <!-- <progress id="file" value="25" max="100"></progress> -->
-    <form id="form" class="form" method="GET" autocomplete="off">
-      <label for="firstName" class="name">Naam</label>
-      <input required type="text" id="firstname" name="firstname" placeholder="Naam" value=<%= res.firstname %>>
+  <main>
+    <section>
+      <div id="LocalStorageOutput">
+      </div>
 
-      <label for="age" class="age">Leeftijd</label>
-      <input required type="text" id="age" name="age" placeholder="Leeftijd" value=<%= res.age %>>
+      <form id="form" class="form" method="GET" autocomplete="off" data-new-list-form>
+        <input id="input-1" required type="text" id="firstname" data-new-list-input name="firstname" placeholder="Peter"
+          value="<%= res.firstname %>" autofocus />
+        <label for="input-1">
+          <span class="label-text">Naam</span>
+          <span class="nav-dot"></span>
+          <span class="bar"><span class="Q1"></span></span>
+          </progress>
+          <p class="tip">Volgende vraag; ENTER</p>
+        </label>
+        <input id="input-2" required type="text" id="age" data-new-list-input name="age" placeholder="20"
+          value="<%= res.age %>">
+        <label for="input-2">
+          <span class="label-text">Leeftijd</span>
+          <span class="nav-dot"></span>
+          <span class="bar"><span class="Q2"></span></span>
+          </progress>
+          <p class="tip">Volgende vraag; ENTER</p>
+        </label>
+        <input id="input-3" required type="text" id="code" data-new-list-input name="code" placeholder="CSS"
+          value="<%= res.code %>" />
+        <label for="input-3">
+          <span class="label-text">Wat is jouw favoriete codetaal?</span>
+          <span class="nav-dot"></span>
+          <span class="bar"><span class="Q3"></span></span>
+          </progress>
+          <p class="tip">Volgende vraag; ENTER</p>
+        </label>
+        <input id="input-4" required type="text" id="teacher" data-new-list-input name="teacher"
+          placeholder="Koop Reynders" value="<%= res.teacher %>">
+        <label for="input-4">
+          <span class="label-text">Leukste Docent</span>
+          <span class="nav-dot"></span>
+          <span class="bar"><span class="Q4"></span></span>
+          </progress>
+          <p class="tip">Volgende vraag; ENTER</p>
+        </label>
+        <input id="input-5" required type="text" id="course" data-new-list-input name="course"
+          placeholder="Browser Technologies" value="<%= res.course %>">
+        <label for="input-5">
+          <span class="label-text">Leukste vak</span>
+          <span class="nav-dot"></span>
+          <span class="bar"><span class="Q5"></span></span>
+          </progress>
+          <p class="tip">Volgende vraag; ENTER</p>
+        </label>
 
-      <label for="code">Favoriete codetaal</label>
-      <input required type="text" id="code" name="code" placeholder="Favoriete codetaal" value=<%= res.code %>>
+        <input class="btn" formaction="/final" name="submit" type="submit" id="submit" />
 
-      <label for="email">Email</label>
-      <input required type="email" id="email" name="email" placeholder="Email" value="<%= res.email %>" size="30"
-        maxlength="100" aria-describedby="email-notes" autocomplete="nope">
+        <button formaction="/save" formnovalidate type="save" class="save" id="save">Save </button>
 
+      </form>
+    </section>
 
-      <!-- <label for="agree" class="side-label">Ik ga akkoord dat deze data wordt gebruikt voor het verbeteren van de
-        minor</label>
-      <input required id="agree" type="checkbox" name="agree" value="check"> -->
+  </main>
 
-      <!-- <div class="container">
-          <h2>Welke codetaal vind jij het leukst?</h2>
-          <ul>
-            <li>
-              <input required type="radio" id="HTML" name="code" value="HTML" <%
-                if(res.code == 'HTML') { %> checked="checked" <% } %> />
-              <label for="HTML">HTML </label>
-              <div class="check"></div>
-            </li>
-            <li>
-              <input type="radio" id="CSS" name="code" value="CSS" <%
-                if(res.code == 'CSS') { %> checked="checked" <% } %> />
-              <label for="CSS">CSS </label><br />
-              <div class="check">
-                <div class="inside"></div>
-              </div>
-            </li>
-            <li>
-              <input type="radio" id="JavaScript" name="code" value="JavaScript" <% if(res.code == 'JavaScript') { %>
-                checked="checked" <% } %> />
-              <label for="JavaScript">JavaScript </label>
-              <div class="check">
-                <div class="inside"></div>
-              </div>
-            </li>
-          </ul>
-        </div> -->
-
-      <input id="btnAgree" class="btn" formaction="/final" name="submit" type="submit" id="submit" />
-      <!-- <input class="save" formaction="/save" name="state" type="submit" id="submit" value="save" /> -->
-
-    </form>
-
-  </div>
   <%- include('partials/footer') %>
 </body>
 

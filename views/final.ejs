@@ -2,34 +2,57 @@
 <%- include('partials/head') %>
 
 <body>
-    <%- include('partials/header') %>
+    <header id="#top">
+        <div class="typewriter">
+            <h1>Web Development</h1>
+            <h2>Uw antwoorden</h2>
+        </div>
+    </header>
+
+    <button class="btn" share-btn>Share!</button>
+
+    <div class="share">
+        <h3>Share by Email</h3>
+        <button class="share-button">
+            <a href="mailto:?subject=Ik wilde je graag mijn antwoorden van de enquete laten zien&amp;body=Check it here http://www.website.com."
+                title="Share by Email">
+                Send
+            </a>
+        </button>
+    </div>
+    <div class="overlay">
+
+    </div>
 
     <section class="overzicht">
 
-        <h2> Uw antwoorden </h2>
-
         <div class="antwoord">
             <h2>Introductie</h2>
-            <p>Uw naam: <%= res.firstname %></p>
-            <p>Leeftijd: <%= res.age %></p>
+            <p><%= res.firstname %></p>
+            <p><%= res.age %></p>
         </div>
 
         <div class="antwoord">
-            <h2>Welke codetaal vind jij het leukst?</h2>
-            <p>Favoriete Codetaal: <%= res.code %></p>
+            <h2>Favoriete Codetaal</h2>
+            <p><%= res.code %></p>
         </div>
 
         <div class="antwoord">
-            <h2>Email</h2>
-            <p>Email: <%= res.email %></p>
+            <h2>Favoriete Leraar</h2>
+            <p><%= res.teacher %></p>
+        </div>
+
+        <div class="antwoord">
+            <h2>Leukste vak</h2>
+            <p><%= res.course %></p>
         </div>
 
         <div class="buttons">
-            <button class="btn"><a href="<%= url %>">Edit</a></button>
+            <a href="<%= url %>" class="btn">Edit</a>
             <a href="/confirm" class="btn" type="send">Confirm </a>
         </div>
     </section>
-
+    <%- include('partials/footer') %>
 </body>
 
 </html>
