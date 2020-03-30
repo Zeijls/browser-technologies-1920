@@ -9,7 +9,7 @@
   <!-- <a href="/save" class="save" name="state" type="submit" id="submit" value="save" save-btn>Save</a> -->
 
   <!-- <button class="btn" delete-btn>Delete answers</button> -->
-  <!-- <button id="LocalStorage" class="btn">Local Storage</button> -->
+  <button id="LocalStorage" class="btn">Local Storage</button>
 
   <main>
     <section>
@@ -63,8 +63,9 @@
           <p class="tip">Volgende vraag; ENTER</p>
         </label>
 
-        <input class="btn" formaction="/final" name="submit" type="submit" id="submit" />
-
+        <div class="buttonSend">
+        <button formaction="/final" name="submit" type="submit" class="send">Versturen</button>
+      </div>
         <button formaction="/save" formnovalidate type="save" class="save" id="save">Save </button>
 
       </form>

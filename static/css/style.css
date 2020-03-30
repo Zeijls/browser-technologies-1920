@@ -34,7 +34,8 @@ h2 {
 
 .btn,
 .save,
-.share-button {
+.share-button,
+.send {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 25px 80px;
@@ -70,13 +71,14 @@ h2 {
   right: 50px;
 }
 
-input[type="submit"] {
-  display: block;
-  max-width: 150px;
-  height: 50px;
-  margin: auto;
-  padding: 5px 10px;
-  line-height: normal;
+.send {
+  width: 200px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 20%;
 }
 
 .share-button > a {
@@ -419,7 +421,7 @@ input:nth-of-type(5):valid + label .nav-dot:before {
   background: #6bccb4;
 }
 
-/* SHARE BUTTOn */
+/* SHARE BUTTON */
 
 .share,
 .overlay {
@@ -624,17 +626,21 @@ input:nth-of-type(5):focus:valid ~ label > .bar > .Q5 {
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
-  .input {
-    font-size: 1.5rem;
-    width: 20%;
+  input {
+    font-size: 1rem;
   }
 
   /* Buttons */
 
   .btn,
   .save,
-  .share-button {
+  .share-button,
+  .send {
     font-size: 0.75rem;
+  }
+
+  .send {
+    width: 150px;
   }
 
   .save {

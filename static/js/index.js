@@ -85,44 +85,44 @@ const shareButton = document.querySelector("[share-btn]");
 
 // Local storage save values
 // BRON: https://www.youtube.com/watch?v=k8yJCeuP6I8
-// const name = document.getElementById("input-1");
-// const age = document.getElementById("input-1");
-// // const code = document.getElementById("input-3");
-// // const teacher = document.getElementById("input-4");
-// // const course = document.getElementById("input-5");
-// const button = document.getElementById("LocalStorage");
-// const localStorageOutput = document.getElementById("LocalStorageOutput");
+const name = document.getElementById("input-1");
+const age = document.getElementById("input-2");
+// const code = document.getElementById("input-3");
+// const teacher = document.getElementById("input-4");
+// const course = document.getElementById("input-5");
+const button = document.getElementById("LocalStorage");
+const localStorageOutput = document.getElementById("LocalStorageOutput");
 
-// button.onclick = function() {
-//   const name = name.value;
-//   const age = age.value;
-//   // const code = code.value;
-//   // const teacher = teacher.value;
-//   // const course = course.value;
+button.onclick = function() {
+  const name = name.value;
+  const age = age.value;
+  // const code = code.value;
+  // const teacher = teacher.value;
+  // const course = course.value;
 
-//   console.log(name);
-//   console.log(age);
+  console.log(name);
+  console.log(age);
 
-// localStorage.setItem(name, age, code, teacher, course);
-// location.reload();
-// };
+  localStorage.setItem(name, age, code, teacher, course);
+  location.reload();
+};
 
-// for (let i = 0; i < localStorage.length; i++) {
-//   const name = localStorage.name(i);
-//   const age = localStorage.getItem(name);
+for (let i = 0; i < localStorage.length; i++) {
+  const name = localStorage.name(i);
+  const age = localStorage.getItem(name);
 
-//   localStorageOutput.innerHTML += `${name}: ${age}`;
-// }
+  localStorageOutput.innerHTML += `${name}: ${age}`;
+}
 
 // // Titel aanpassen aan input
 
-// let title2 = document.getElementById("title");
-// let firstname = document.getElementById("firstname");
-// if (firstname) {
-//   firstname.addEventListener("input", function() {
-//     title2.innerHTML = "Welkom, " + firstname.value;
-//   });
-// }
+let title2 = document.getElementById("title");
+let firstname = document.getElementById("firstname");
+if (firstname) {
+  firstname.addEventListener("input", function() {
+    title2.innerHTML = "Welkom, " + firstname.value;
+  });
+}
 // Share Button
 const overlay = document.querySelector(".overlay");
 const shareModal = document.querySelector(".share");
@@ -145,7 +145,6 @@ if (shareButton) {
     } else {
       overlay.classList.add("show-share");
       shareModal.classList.add("show-share");
-      console.log("ahai");
     }
   });
 }
