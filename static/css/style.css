@@ -112,7 +112,12 @@ a {
   background-color: #535353;
   margin: 10px auto;
   padding: 5px;
-  width: 60%;
+  width: 70%;
+}
+
+.save-page > article {
+  width: 80%;
+  margin: auto;
 }
 
 .save-page h3 {
@@ -121,20 +126,21 @@ a {
   text-align: center;
 }
 
-.save-page p {
+.save-page > article > p {
   text-align: center;
   color: white;
   font-size: 1.2rem;
   margin-bottom: 7%;
 }
 
-.save-page > a {
+.save-page > article > a {
   display: block;
   text-align: center;
   color: rgb(16, 172, 101);
   text-decoration: underline;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 5%;
+  width: 50%;
 }
 
 .overzicht {
@@ -146,11 +152,11 @@ a {
 /* BRON; https://css-tricks.com/snippets/css/typewriter-effect/ */
 .typewriter {
   margin-top: 5%;
+  width: auto;
 }
 
 .typewriter h1 {
   overflow: hidden;
-  border-right: 0.15em solid orange;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
@@ -165,18 +171,6 @@ a {
 
   to {
     width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: orange;
   }
 }
 
@@ -622,21 +616,37 @@ input:nth-of-type(5):focus:valid ~ label > .bar > .Q5 {
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   body {
     background-color: blue;
   }
-}
+} */
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
-  body {
-    background-color: olive;
+  .input {
+    font-size: 1.5rem;
+    width: 20%;
+  }
+
+  /* Buttons */
+
+  .btn,
+  .save,
+  .share-button {
+    font-size: 0.75rem;
   }
 
   .save {
     position: absolute;
-    top: 130px;
+    top: 120px;
+    right: 50px;
+  }
+
+  /* Share button */
+  [share-btn] {
+    position: absolute;
+    top: 90px;
     right: 50px;
   }
 
@@ -644,12 +654,34 @@ input:nth-of-type(5):focus:valid ~ label > .bar > .Q5 {
     margin-top: 80px;
   }
 
+  .share {
+    font-size: 0.8rem;
+  }
+
+  /* Typewriter */
+
   .typewriter {
     font-size: 0.8rem;
     margin-top: 10%;
   }
 
-  .share {
-    font-size: 0.8rem;
+  #typewriterFinal {
+    margin-top: 50%;
+  }
+
+  .typewriter h1 {
+    font-size: 1.2rem;
+    width: auto;
+  }
+
+  .typewriter h2 {
+    width: auto;
+    font-size: 1rem;
+  }
+
+  /* Navigatie Sidebar */
+
+  .nav-dot {
+    right: 1.5rem;
   }
 }
