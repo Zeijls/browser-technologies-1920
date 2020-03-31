@@ -76,7 +76,7 @@ Zodra de enquete is bevestigd krijg je nog een laatste bericht met een bedankje 
 
 </details>
 
-## Wireflows
+## Wireflows vs Resultaat
 
 #### Features
 
@@ -87,28 +87,110 @@ Zodra de enquete is bevestigd krijg je nog een laatste bericht met een bedankje 
 
 In de functional Laag kun je de vragen van de enquete invullen en opslaan om later te hervatten. Je kunt je antwoorden opsturen, dan krijg je een overzicht van de gegeven antwoorden, en vervolgens een bevestiging dat de enquete is verstuurd.
 
+`Semantische HTML (Laag 1)`
+
 <details>
-  <summary> Semantische HTML (Laag 1)
+  <summary>  Wireflow
 </summary>
   <img width="840" alt="2 1" src="https://user-images.githubusercontent.com/45422060/76973659-893c5280-6930-11ea-9ef5-f4fec0cd5bc1.png">
+ </details>
+
+`Resultaat`
+
+ <details>
+  <summary> Enquete vragen
+</summary>
+<img width="675" alt="Screenshot 2020-03-31 at 14 39 46" src="https://user-images.githubusercontent.com/45422060/78027435-a5db8000-735d-11ea-9874-e3a0fad173d2.png">
+ </details>
+
+  <details>
+  <summary> Opslaan
+</summary>
+<img width="522" alt="Screenshot 2020-03-31 at 14 40 45" src="https://user-images.githubusercontent.com/45422060/78027513-c60b3f00-735d-11ea-8988-299f8e4f13db.png">
+ </details>
+
+   <details>
+  <summary> Overzicht
+</summary>
+<img width="446" alt="Screenshot 2020-03-31 at 14 40 16" src="https://user-images.githubusercontent.com/45422060/78027549-d7544b80-735d-11ea-9010-abbc1c9f5431.png">
+ </details>
+
+   <details>
+  <summary> Bevestiging
+</summary>
+<img width="522" alt="Screenshot 2020-03-31 at 14 40 45" src="https://user-images.githubusercontent.com/45422060/78027585-e6d39480-735d-11ea-9e4c-a356f985fcf9.png">
  </details>
 
 #### Usable
 
 In de usable laag ziet het formulier er heel netjes uit, maar de werking van het formulier is in principe hetzelfde als bij de functional laag. Er wordt wel een navigatie balk aan het concept toegevoegd zodat het voor de gebruiker duidelijk is hoeveel vragen er nog op hem te wachten staan.
 
+`Design Patterns CSS (Laag 2)`
+
 <details>
-<summary>Design Patterns CSS (Laag 2) </summary>
+<summary> Wireflow</summary>
 <img width="900" alt="2 2" src="https://user-images.githubusercontent.com/45422060/76973662-89d4e900-6930-11ea-8d47-acfbfe616056.png">
+</details>
+
+`Resultaat`
+
+<details>
+<summary> Save link without Javascript</summary>
+<img width="1075" alt="Screenshot 2020-03-31 at 14 44 29" src="https://user-images.githubusercontent.com/45422060/78027747-29956c80-735e-11ea-9b20-fd270314dff7.png">
 </details>
 
 #### Pleasurable
 
 In de pleasurable laag wordt de volgende vraag pas beschikbaar als het antwoord naar behoren is ingevuld. Verder kan de gebruiker in deze laag zijn formulier opslaan, zonder het linkje in de eerste twee lagen.
 
+`Javascript (Laag 3)`
+
 <details>
-<summary> Javascript (Laag 3) </summary>
+<summary> Wireflow </summary>
 <img width="883" alt="2 3" src="https://user-images.githubusercontent.com/45422060/76973664-8b061600-6930-11ea-9fe0-c8fb3cf50962.png">
+</details>
+
+<details>
+<summary> Automatisch opslaan Localstorage </summary>
+<img width="1355" alt="Screenshot 2020-03-31 at 14 48 52" src="https://user-images.githubusercontent.com/45422060/78028112-c3f5b000-735e-11ea-88ec-2eb0bef73e85.png">
+</details>
+
+<summary> Reset button</summary>
+Ingevulde antwoorden:
+<img width="1238" alt="Screenshot 2020-03-31 at 14 53 39" src="https://user-images.githubusercontent.com/45422060/78028543-7af22b80-735f-11ea-9ef2-a3ffa2423022.png">
+<br>
+Gereset:
+<img width="1226" alt="Screenshot 2020-03-31 at 14 54 01" src="https://user-images.githubusercontent.com/45422060/78028547-7cbbef00-735f-11ea-92c0-8950ac7a67eb.png">
+
+</details>
+
+<details>
+<summary> Copy button</summary>
+Copy button:
+<img width="1098" alt="Screenshot 2020-03-31 at 14 50 16" src="https://user-images.githubusercontent.com/45422060/78028310-1d5ddf00-735f-11ea-82f0-09703d5cc781.png">
+<br>
+Alert:
+<img width="1062" alt="Screenshot 2020-03-31 at 14 50 21" src="https://user-images.githubusercontent.com/45422060/78028316-1fc03900-735f-11ea-95c2-7f97429d694f.png">
+<br>
+Copied:
+<img width="1039" alt="Screenshot 2020-03-31 at 14 50 28" src="https://user-images.githubusercontent.com/45422060/78028321-2189fc80-735f-11ea-8f04-ef53e37cf3fe.png">
+
+</details>
+
+<details>
+<summary> Share button</summary>
+Share:
+<img width="476" alt="Screenshot 2020-03-31 at 14 14 50" src="https://user-images.githubusercontent.com/45422060/78028766-cad0f280-735f-11ea-968b-ce9080e7a505.png">
+<br>
+Fallback:
+<img width="1229" alt="Screenshot 2020-03-31 at 14 55 59" src="https://user-images.githubusercontent.com/45422060/78028742-bf7dc700-735f-11ea-948b-138dcb1a99f1.png">
+</details>
+
+`Resultaat`
+
+<details>
+<summary> Save link without Javascript</summary>
+<img width="1075" alt="Screenshot 2020-03-31 at 14 44 29" src="https://user-images.githubusercontent.com/45422060/78027747-29956c80-735e-11ea-9b20-fd270314dff7.png">
 </details>
 
 ## Feature Detection
