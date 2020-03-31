@@ -1,6 +1,3 @@
-const shareButton = document.querySelector("[share-btn]");
-const resetButton = document.querySelector(".reset");
-
 // Local storage save
 
 const allInputs = document.querySelectorAll("input");
@@ -31,12 +28,13 @@ function onEnter(e) {
 console.log(allInputs);
 
 // Local storage resetten
-// resetButton.addEventListener("click", reset);
+const resetButton = document.querySelector(".reset");
 
-// function reset() {
-//   localStorage.clear();
-//   inputValue = " ";
-// }
+resetButton.addEventListener("click", function() {
+  localStorage.clear();
+  console.log("Local storage is empty!");
+  inputValue = 0;
+});
 
 // Titel aanpassen aan input
 
@@ -48,37 +46,38 @@ if (firstname) {
   });
 }
 // Share Button
-const overlay = document.querySelector(".overlay");
-const shareModal = document.querySelector(".share");
+// const shareButton = document.querySelector("[share-btn]");
+// const overlay = document.querySelector(".overlay");
+// const shareModal = document.querySelector(".share");
 
-const title = window.document.title;
-const url = window.document.location.href;
+// const title = window.document.title;
+// const url = window.document.location.href;
 
-if (shareButton) {
-  shareButton.addEventListener("click", function() {
-    if (navigator.share) {
-      navigator
-        .share({
-          title: `${title}`,
-          list: `${list}`
-        })
-        .then(function() {
-          console.log("Thanks for sharing!");
-        })
-        .catch(console.error);
-    } else {
-      overlay.classList.add("show-share");
-      shareModal.classList.add("show-share");
-    }
-  });
-}
+// if (shareButton) {
+//   shareButton.addEventListener("click", function() {
+//     if (navigator.share) {
+//       navigator
+//         .share({
+//           title: `${title}`,
+//           list: `${list}`
+//         })
+//         .then(function() {
+//           console.log("Thanks for sharing!");
+//         })
+//         .catch(console.error);
+//     } else {
+//       overlay.classList.add("show-share");
+//       shareModal.classList.add("show-share");
+//     }
+//   });
+// }
 
-if (overlay) {
-  overlay.addEventListener("click", function() {
-    overlay.classList.remove("show-share");
-    shareModal.classList.remove("show-share");
-  });
-}
+// if (overlay) {
+//   overlay.addEventListener("click", function() {
+//     overlay.classList.remove("show-share");
+//     shareModal.classList.remove("show-share");
+//   });
+// }
 
 // Copy Button Save link
 
