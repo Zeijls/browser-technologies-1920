@@ -6,12 +6,12 @@
 <br>
 <img width="1231" alt="Screenshot 2020-03-31 at 14 57 54" src="https://user-images.githubusercontent.com/45422060/78028920-0ff52480-7360-11ea-9199-b678f9256c1e.png">
 
-## Inhoudsopgave
+## Inhoud
 
 - [Live Demo](#Live-Demo)
 - [Installatie](#Installatie)
 - [Concept](#Concept)
-- [Wireflows vs Resultaat](#Wireflows-vs-Resultaat)
+- [Progressive Enhancement](#Progressive-Enhancement)
 - [Features](#Features)
   - [Save link without Javascript](#Save-link-without-Javascript)
   - [Automatisch opslaan LocalStorage](#Automatisch-opslaan-LocalStorage)
@@ -87,12 +87,20 @@ Zodra de enquete is bevestigd krijg je nog een laatste bericht met een bedankje 
 
 </details>
 
-## Wireflows vs Resultaat
+## Progressive Enhancement
+
+Om een website op te bouwen aan de hand van Progressive Enhancement is het belangrijk om de core functionaliteit van de website ten alle tijden te laten werken. Hiervoor zijn drie verschillende lagen:
+
+- Functional / Reliable ~ In deze laag moet de core functionaliteit werken in HTML, zonder CSS en Javascript. Hierdoor voorkom je dat sommige gebruikers van een website hun doel niet kunnen behalen doordat ze niet de nieuwste high tech devices hebben, of misschien een aandoening waardoor dit lastig is (denk bijvoorbeeld aan blinden die een screenreader gebruiken)
+- Usable ~ In deze laag wordt de website veel fijner in gebruik door een mooie styling en layout. Hier zijn kleur contrasten en UX principes belangrijk om de experience van de gebruiker te bevorderen.
+- Pleasurable ~ In deze laag heb ik Javascript aan mijn website toegevoegd. De website is super gaaf en cool met allemaal handige features. De features hebben een fallback voor gebruikers die dit high tech device niet hebben, of het is een extra feature die niet perse nodig is om de core functionaliteit van de website mogelijk te maken.
 
 #### Features
 
 - Enquete invullen met verschillende antwoordmogelijkheden
 - Enquete opslaan om later te hervatten (Mogelijk met hidden form field)
+
+### Wireflows vs Resultaat
 
 #### Functional / Reliable
 
@@ -576,13 +584,35 @@ if (shareButton) {
 
 ## Conclusie
 
-Student kan de core functionaliteit van een use case doorgronden
-Toegankelijkheid: De user experience is goed
-Readme: In de beschrijving van het project staat een probleemdefinitie, hoe het probleem is opgelost en een uitleg van de code.
-Student kan uitleggen wat Progressive enhancement is.
-Student laat zien hoe Progressive Enhancement toe te passen in Web Development
-Student kan uitleggen wat Feature detection is.
-Student laat zien hoe Feature Detection kan worden toegepast in Web Development
+De beoordeling wordt gedaan op basis van de Rubric van het vak. Zorg dat je voor de beoordeling in je Readme (of wiki) een conclusie schrijft waar je in gaat op de leerdoelen en criteria en hoe je dit hebt gehaald. Dit is je bewijsvoering voor het vak.
+
+### Core functionaliteit
+
+De core functionaliteit van mijn website is het invullen van de enquete, hiernaast moet de gebruiker zijn antwoorden tussentijds kunnen opslaan en de enquete later hervatten. Deze functionaliteiten moeten ten alle tijden beschikbaar zijn. Om dit mogelijk te maken heb ik mijn website getest op de volgende manieren.
+
+- [Wiki 8 Features Opdracht 2](https://github.com/Zeijls/browser-technologies-1920/wiki/Opdracht-2-Features-Enquete)
+- [Save link without Javascript](#Save-link-without-Javascript)
+
+### Toegankelijkheid
+
+De website moet goed te gebruiken zijn voor iedere gebruiker. Dit heb ik getest in het volgende onderzoek. De belangrijkste punten voor toegankelijkheid zijn: Kleurenblindheid en Zonder muis of trackpad.
+Om de website toetsbord vriendelijk te maken heb ik bijvoorbeeld de buttons onderaan de website geplaatst in de HTML. Op de pagina waarin de gebruiker de enquete invult is de core functionaliteit de vragen invullen, en daarna pas versturen, opslaan en resetten. In de styling staan de buttons opslaan en resetten rechtsbovenaan.
+
+- [Wiki 8 Features Opdracht 2](https://github.com/Zeijls/browser-technologies-1920/wiki/Opdracht-2-Features-Enquete)
+
+### Readme / Progressive Enhancement
+
+De progressive enhancement heb ik in deze alinea uitgelegd. Hier wordt ook beschreven hoe ik Progressive Enhancement heb toegepast op mijn website. De beschrijving van verschillende features worden daaronder beschreven.
+
+- [Progressive Enhancement](#Progressive-Enhancement)
+- [Features](#Features)
+
+### Feature Detection
+
+Het is belangrijk dat de website die je maakt voor iedere gebruiker werkt, of ze jou website nu in een hele oude browser bezoeken die niet veel ondersteund, of bijvoorbeeld blind is en door de website surft met een screenreader. De core functionaliteit van de website moet werken ten alle tijden. Ik heb dit onderzocht door een test te doen in verschillende browsers. Ik heb ontdekt dat een aantal features niet fantastisch werken. Voor feature detection moet je nagaan of de features die niet in elke browser werken invloed hebben op de core functionaliteit of niet. Als de feature invloed heeft moet je hier een fallback voor schrijven.
+
+- [Browser Testing](#Browser-Testing)
+- [Fallbacks](#Fallbacks)
 
 ## Artikelen
 
