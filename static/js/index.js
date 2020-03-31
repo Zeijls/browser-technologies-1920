@@ -61,7 +61,7 @@ if (firstname) {
 // Share Button
 //
 
-const shareButton = document.querySelector("[share-btn]");
+const shareButton = document.querySelector(".share-btn");
 if (shareButton) {
   shareButton.addEventListener("click", function() {
     if (navigator.share) {
