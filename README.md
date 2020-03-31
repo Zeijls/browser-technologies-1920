@@ -635,8 +635,8 @@ Deze opdrachten staan in mijn WIKI
 
 ## Bronnen
 
-- [CODEPEN FORM](https://codepen.io/balapa/pen/XbXVRg)
-- [W3SCHOOLS](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_reset)
+- [Form Codepen](https://codepen.io/balapa/pen/XbXVRg)
+- [Reset button Codepen](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_reset)
 - [Button styling](https://codepen.io/LemonPL/pen/gXvjbq)
 - [Typewriter](https://css-tricks.com/snippets/css/typewriter-effect/)
 - [Interactive Form](https://codepen.io/epilande/pen/eZJGpP)
