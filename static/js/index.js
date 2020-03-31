@@ -31,12 +31,12 @@ function onEnter(e) {
 console.log(allInputs);
 
 // Local storage resetten
-resetButton.addEventListener("click", resetLocalStorage);
+// resetButton.addEventListener("click", reset);
 
-function resetLocalStorage() {
-  localStorage.clear();
-  inputValue = " ";
-}
+// function reset() {
+//   localStorage.clear();
+//   inputValue = " ";
+// }
 
 // Titel aanpassen aan input
 

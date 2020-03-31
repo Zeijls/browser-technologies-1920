@@ -8,9 +8,11 @@
 
 - [Live Demo](#Live-Demo)
 - [Installatie](#Installatie)
-- [Feedback](#Feedback)
 - [Concept](#Concept)
 - [Wireflows](#Wireflows)
+- [Feature Detection](#Feature-Detection)
+  - [Onderzoek 8 features](#Onderzoek-8-features-Opdracht-2)
+  - [Browser Testing](#Browser-Testing)
 - [Artikelen](#Artikelen)
 - [Opdrachten](#Opdrachten)
 - [To Do](#To-Do)
@@ -24,84 +26,17 @@ De live demo werkt nog niet. Moet ik nog deployen via Heroku
 
 ## Installatie
 
-### Nodejs
+### Installatie
 
-<details>
-<summary> Nodejs </summary>
+```bash
+#### Clone repository
+git clone https://github.com/zeijls/browser-technologies-1920.git
 
-Ik had nodejs al geinstalleerd op mijn computer. Om te controleren of NPM al is geintalleerd kun je het volgende commando toepassen in je terminal;
+cd progressive-web-apps-1920
 
-> node -v
-
-Als je nodejs nog niet hebt kun je dit installeren via de volgende link;
-[Nodejs installeren](https://nodejs.org/en/download/)
-
-</details>
-
-### NPM
-
-<details>
-<summary> NPM </summary>
-Om te controleren of je NPM al hebt geinstalleerd kun je het volgende commando uitvoeren in je terminal;
-
-> npm -v
-
-Als je NPM nog moet installeren kun je het volgende commando uitvoeren in je terminal;
-
-> npm install npm@latest -g
-
-</details>
-
-### Express
-
-<details>
-<summary> Express </summary>
-Om express te installeren heb je een aantal verschillende stappen nodig. Hierbij gaan we ervan uit dat je nodejs succesvol hebt geinstalleerd.
-
-> mkdir myapp
-> cd myapp
-
-Gebruik npm init om een bestand package.json file aan te maken voor je applicatie.
-
-> npm init
-
-Om de standaard instellingen te accepteren zoals de versie en de naam van je applicatie kun je op enter klikken. In de entry point vul je de naam van je javascript bestand in.
-
-> entry point: (index.js)
-
-Installeer express in de dependecies list
-
-> npm install express --save
-
-</details>
-
-### Nodemon
-
-<details>
-<summary> Nodemon </summary>
-
-Nodemon kan de wijzigingen die je toepast in de applicatie meteen doorvoegen naar je localhost. Hierdoor hoef je niet iedere keer NPM af te sluiten en opnieuw op te starten. Nodemon installeer je op de volgende manier in je dependencies;
-
-> npm install --save-dev nodemon
-
-</details>
-
-### ejs
-
-<details>
-<summary> ejs </summary>
-
-Door middel van ejs kun je html renderen in je bestanden. Om ejc te installeren gebruik je het volgende commando;
-
-> npm install ejs
-
-</details>
-
-## Feedback
-
-- Is de opbouw van de readme zo goed?
-- Klopt mijn opbouw in de lagen zoals ik het nu wil aanpakken aan de hand van Progressive Enhancement?
-- Is mijn eerste versie van de HTMl nu netjes opgebouwd op basis van de theorie uit de gelezen artikelen?
+#### Installeer dependencies en start de server
+npm run dev
+```
 
 ## Concept
 
@@ -156,6 +91,40 @@ In de pleasurable laag wordt de volgende vraag pas beschikbaar als het antwoord 
 <details>
 <summary> Javascript (Laag 3) </summary>
 <img width="883" alt="2 3" src="https://user-images.githubusercontent.com/45422060/76973664-8b061600-6930-11ea-9fe0-c8fb3cf50962.png">
+</details>
+
+## Feature Detection
+
+### Onderzoek 8 features Opdracht 2
+
+Nadat opdracht 2 was afgerond heb ik opnieuw het 8 feature onderzoek toegepast op de enquete. De resultaten heb ik bij gehouden in mijn wiki.
+[Wiki 8 Features Opdracht 2](https://github.com/Zeijls/browser-technologies-1920/wiki/Opdracht-2-Features-Enquete)
+
+### Browser testing
+
+<details><summary> Firefox </summary>
+Voor het testen in verschillende browsers ben ik begonnen met Firefox. In deze browser werkte alles naar behoren en had ik nergens iets op aan te merken.
+</details>
+
+<details><summary> Safari </summary>
+
+</details>
+
+<details><summary> Opera </summary>
+Bij opera was eigenlijk precies hetzelfde verhaal als bij firefox. Vanaf dit moment wilde ik alle browsers gaan uittesten. Ik kwam op de volgende website en hier kun je een proeftest draaien met allemaal verschillende browsers.
+[Lamdatest](https://app.lambdatest.com/console/realtime)
+</details>
+
+<details><summary> Edge </summary>
+
+</details>
+
+<details><summary> Yandex </summary>
+
+</details>
+
+<details><summary> Internet Explorer </summary>
+
 </details>
 
 ## Artikelen
