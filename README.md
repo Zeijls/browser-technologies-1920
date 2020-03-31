@@ -2,7 +2,9 @@
 
 ## Browser Technologies @cmda-minor-web 1920
 
-<img width="1222" alt="Screenshot 2020-03-20 at 13 42 02" src="https://user-images.githubusercontent.com/45422060/77164557-d9422300-6ab0-11ea-9c25-7220dabaf842.png">
+<img width="1357" alt="Screenshot 2020-03-31 at 14 57 27" src="https://user-images.githubusercontent.com/45422060/78028893-04a1f900-7360-11ea-853d-164af3ad135f.png">
+<br>
+<img width="1231" alt="Screenshot 2020-03-31 at 14 57 54" src="https://user-images.githubusercontent.com/45422060/78028920-0ff52480-7360-11ea-9199-b678f9256c1e.png">
 
 ## Inhoudsopgave
 
