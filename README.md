@@ -152,6 +152,8 @@ In de pleasurable laag wordt de volgende vraag pas beschikbaar als het antwoord 
 <img width="883" alt="2 3" src="https://user-images.githubusercontent.com/45422060/76973664-8b061600-6930-11ea-9fe0-c8fb3cf50962.png">
 </details>
 
+`Resultaat`
+
 <details>
 <summary> Automatisch opslaan Localstorage </summary>
 <img width="1355" alt="Screenshot 2020-03-31 at 14 48 52" src="https://user-images.githubusercontent.com/45422060/78028112-c3f5b000-735e-11ea-88ec-2eb0bef73e85.png">
@@ -159,10 +161,10 @@ In de pleasurable laag wordt de volgende vraag pas beschikbaar als het antwoord 
 
 <details>
 <summary> Reset button</summary>
-Ingevulde antwoorden:
+Ingevulde antwoorden: <br>
 <img width="1238" alt="Screenshot 2020-03-31 at 14 53 39" src="https://user-images.githubusercontent.com/45422060/78028543-7af22b80-735f-11ea-9ef2-a3ffa2423022.png">
 <br>
-Gereset:
+Gereset: <br>
 <img width="1226" alt="Screenshot 2020-03-31 at 14 54 01" src="https://user-images.githubusercontent.com/45422060/78028547-7cbbef00-735f-11ea-92c0-8950ac7a67eb.png">
 
 </details>
@@ -188,8 +190,6 @@ Share:
 Fallback:
 <img width="1229" alt="Screenshot 2020-03-31 at 14 55 59" src="https://user-images.githubusercontent.com/45422060/78028742-bf7dc700-735f-11ea-948b-138dcb1a99f1.png">
 </details>
-
-`Resultaat`
 
 <details>
 <summary> Save link without Javascript</summary>
