@@ -40,6 +40,11 @@ npm run dev
 
 ## Concept
 
+Het hoofddoel van de website is een enquete invullen waarbij de gebruiker zijn antwoorden tussentijds kan opslaan. Dit sluit aan op mijn gekozen case:
+`Use case:`
+
+> Ik wil een enquete kunnen invullen over de minor Web Development, met verschillende antwoord mogelijkheden. Als ik de enquete niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
+
 <details><summary>Invullen van de Enquete</summary>
 
 Je kunt verschillende vragen beantwoorden in de enquete. De vragen worden met Progressive Disclousure een voor een weergegeven.
