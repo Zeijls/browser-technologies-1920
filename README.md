@@ -627,10 +627,11 @@ Deze opdrachten staan in mijn WIKI
 [Features](https://github.com/Zeijls/browser-technologies-1920/wiki/Features)<br>
 [Screenreader](https://github.com/Zeijls/browser-technologies-1920/wiki/Screenreader)<br>
 
-## To Do
+## Wishlist
 
 - [ ] Save button verdwijnt als Javascript aanwezig is
 - [ ] Reset button werkt ook zodra formulier al verstuurd is maar weer wordt gewijzigd
+- [ ] Meerdere soorten input fields in enquete
 
 ## Bronnen
 
