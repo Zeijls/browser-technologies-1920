@@ -1,7 +1,23 @@
-// Local storage save
-
+// Variabelen
+// Local storage
 const allInputs = document.querySelectorAll("input");
 
+// Reset button
+const resetButton = document.querySelector(".reset");
+
+// Typewriting Title
+let title = document.getElementById("title");
+let firstname = document.getElementById("firstname");
+
+// Share button
+
+const overlay = document.querySelector(".overlay");
+const shareModal = document.querySelector(".share");
+
+const titleShare = window.document.title;
+const url = window.document.location.href;
+
+// Local storage save
 allInputs.forEach(x => {
   console.log(x);
   console.log(x.id);
@@ -28,37 +44,58 @@ function onEnter(e) {
 console.log(allInputs);
 
 // Local storage resetten
-const resetButton = document.querySelector(".reset");
-
-resetButton.addEventListener("click", function() {
-  localStorage.clear();
-  console.log("Local storage is empty!");
-  inputValue = 0;
-});
+if (resetButton) {
+  resetButton.addEventListener("click", function() {
+    localStorage.clear();
+    console.log("Local storage is empty!");
+    inputValue = " ";
+  });
+}
 
 // Titel aanpassen aan input
-
-let title2 = document.getElementById("title");
-let firstname = document.getElementById("firstname");
 if (firstname) {
   firstname.addEventListener("input", function() {
-    title2.innerHTML = "Welkom, " + firstname.value;
+    title.innerHTML = "Welkom, " + firstname.value;
   });
 }
 // Share Button
-// const shareButton = document.querySelector("[share-btn]");
-// const overlay = document.querySelector(".overlay");
-// const shareModal = document.querySelector(".share");
+//
 
-// const title = window.document.title;
-// const url = window.document.location.href;
+const shareButton = document.querySelector("[share-btn]");
+if (shareButton) {
+  shareButton.addEventListener("click", function() {
+    if (navigator.share) {
+      navigator
+        .share({
+          url: url,
+          text: shareList
+        })
+        .then(function() {
+          console.log("Thanks for sharing!");
+        })
+        .catch(console.error);
+    } else {
+      overlay.classList.add("show-share");
+      shareModal.classList.add("show-share");
+      // window.open(
+      //   "mailto:?subject=My grocery list!&body=This is my grocery list: " +
+      //     shareList
+      // );
+    }
+  });
+}
 
-// if (shareButton) {
+overlay.addEventListener("click", function() {
+  overlay.classList.remove("show-share");
+  shareModal.classList.remove("show-share");
+});
+
 //   shareButton.addEventListener("click", function() {
+//     console.log("element is clicked!!");
 //     if (navigator.share) {
 //       navigator
 //         .share({
-//           title: `${title}`,
+//           titleShare: `${title}`,
 //           list: `${list}`
 //         })
 //         .then(function() {
@@ -66,8 +103,11 @@ if (firstname) {
 //         })
 //         .catch(console.error);
 //     } else {
+//       console.log("geen navigate.share aanwezig");
 //       overlay.classList.add("show-share");
+//       console.log("voegt classlist toe");
 //       shareModal.classList.add("show-share");
+//       console.log("voegt nog een classlist toe");
 //     }
 //   });
 // }

@@ -121,7 +121,7 @@ Via lambdatest heb ik mijn Enquete getest via de browser Edge. Ik heb hier geen 
 </details>
 
 <details><summary> Internet Explorer </summary>
-Het testen van Internet Explorer heb ik ook getest via Lambdatest. Hier heb ik een aantal fouten ondervonden. De share button is niet clickable. Hier staat al een fallback onder, maar doordat je niet op de button kunt klikken, wordt deze niet weergegeven. Daarnaast voert de reset button zijn functie nog niet uit. De antwoorden die de gebruiker invoert worden niet automatisch opgeslagen in local storage. Voor bovenstaande problemen ga ik een oplossing zoeken.
+Het testen van Internet Explorer heb ik ook getest via Lambdatest. Hier heb ik een aantal fouten ondervonden. De share button is niet clickable. Hier staat al een fallback onder, maar doordat je niet op de button kunt klikken, wordt deze niet weergegeven. De antwoorden die de gebruiker invoert worden niet automatisch opgeslagen in local storage. Voor bovenstaande problemen ga ik een oplossing zoeken.
 </details>
 
 ### Fallback
