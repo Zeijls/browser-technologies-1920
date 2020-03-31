@@ -137,6 +137,7 @@ In de link die hier wordt weergegeven zijn alle waardes van de text fields opges
 
 <details><summary> Copy button </summary>
 In Internet Explorer werkt de copy button niet helemaal lekker. Hiervoor heb ik als fallback een linkje om de url gezet. Zodat je ten alle tijden, of de copy button nou werkt of niet makkelijk op dit linkje kunt klikken om weer terug te gaan naar uw ingevulde antwoorden van de enquete.
+<br>
 <img width="249" alt="Screenshot 2020-03-31 at 14 12 25" src="https://user-images.githubusercontent.com/45422060/78025125-c30e4f80-7359-11ea-927a-2013480fec12.png">
 
 <img width="1084" alt="Screenshot 2020-03-31 at 14 00 40" src="https://user-images.githubusercontent.com/45422060/78024094-14b5da80-7358-11ea-98e3-e5ac3c09866f.png">
@@ -145,16 +146,20 @@ In Internet Explorer werkt de copy button niet helemaal lekker. Hiervoor heb ik 
 
 <details><summary> Share button </summary>
 Nadat de gebruiker de enquete heeft ingevuld, is er een mogelijkheid om deze te delen dmv. Web Share API. Deze wordt niet heel goed ondersteund, dus hiervoor heb ik een fallback gemaakt. Zodra de browser waarin de website wordt bezocht, de Web Share API niet ondersteund, wordt de fallback om de antwoorden te delen via mail weergegeven. 
+<br>
 Fallback;
 <img width="716" alt="Screenshot 2020-03-31 at 14 20 34" src="https://user-images.githubusercontent.com/45422060/78025725-cce48280-735a-11ea-945b-bb8338e0ce66.png">
-
+<br>
 Voorbeeld als Web Share API wordt ondersteund:
 <img width="476" alt="Screenshot 2020-03-31 at 14 14 50" src="https://user-images.githubusercontent.com/45422060/78025315-1ed8d880-735a-11ea-8243-73ef90cee371.png">
-
+<br>
 Can i use ondersteuning Web Share API:
 <img width="1246" alt="Screenshot 2020-03-31 at 14 15 36" src="https://user-images.githubusercontent.com/45422060/78025352-2d26f480-735a-11ea-8c76-4df37122b1af.png">
 
 <details><summary> Code </summary>
+
+`Javscript`:
+
 ```js
 if (shareButton) {
   shareButton.addEventListener("click", function() {
@@ -178,7 +183,8 @@ if (shareButton) {
     shareModal.classList.toggle("show-share");
   });
 }
-``` 
+```
+
 </details>
 </details>
 
