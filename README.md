@@ -11,13 +11,22 @@
 - [Live Demo](#Live-Demo)
 - [Installatie](#Installatie)
 - [Concept](#Concept)
-- [Wireflows](#Wireflows)
+- [Wireflows vs Resultaat](#Wireflows-vs-Resultaat)
+- [Features](#Features)
+  - [Save link without Javascript](#Save-link-without-Javascript)
+  - [Automatisch opslaan LocalStorage](#Automatisch-opslaan-LocalStorage)
+  - [Reset button](#Reset-button)
+  - [Copy button](#Copy-button)
+  - [Share button](#Share-button)
+  - [Titel Typewriting](#Titel-Typewriting)
 - [Feature Detection](#Feature-Detection)
   - [Onderzoek 8 features](#Onderzoek-8-features-Opdracht-2)
   - [Browser Testing](#Browser-Testing)
+  - [Fallbacks](#Fallbacks)
+- [Conclusie](#Conclusie)
 - [Artikelen](#Artikelen)
 - [Opdrachten](#Opdrachten)
-- [To Do](#To-Do)
+- [Wishlist](#Wishlist)
 - [Bronnen](#Bronnen)
 - [Credits](#Credits)
 
@@ -204,6 +213,7 @@ Als javascript ontbreekt, en de gebruiker de antwoorden wilt opslaan kan hij op 
 
 `Resultaat`
 
+<details>
 <summary> Save link without Javascript</summary>
 <img width="1075" alt="Screenshot 2020-03-31 at 14 44 29" src="https://user-images.githubusercontent.com/45422060/78027747-29956c80-735e-11ea-9b20-fd270314dff7.png">
 </details>
@@ -499,7 +509,7 @@ Via lambdatest heb ik mijn Enquete getest via de browser Edge. Ik heb hier geen 
 Het testen van Internet Explorer heb ik ook getest via Lambdatest. Hier heb ik een aantal fouten ondervonden. De antwoorden die de gebruiker invoert worden niet automatisch opgeslagen in local storage. Voor bovenstaande problemen ga ik een oplossing zoeken.De share button is niet clickable. Hier staat al een fallback onder, maar doordat je niet op de button kunt klikken, wordt deze niet weergegeven. De oplossing zal ik uitleggen bij de fallback.
 </details>
 
-### Fallback
+### Fallbacks
 
 <details><summary> Auto Save Local Storage </summary>
 In sommige gevallen zal de automatische save via local storage niet werken. Dit kan komen doordat de gebruiker zijn javascript heeft disabled. Of doordat de browser dit niet ondersteund. Daarom heb ik een button gemaakt die de antwoorden uit de enquete nog steeds kan opslaan. Zodra de gebruiker op deze save button klikt, komt hij op de volgende pagina.
@@ -589,19 +599,22 @@ Deze opdrachten staan in mijn WIKI
 
 ## To Do
 
-- [ ] Heroku laten werken
-- [ ] Issue feedback Menno verwerken (Screenreader verder uitbreiden)
-- [x] Artikelen lezen
-- [ ] Object detection uitzoeken (JS)
-- [ ] Opdracht 2
-- [x] Readme bijwerken
-- [ ] [Aria label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
+- [ ] Save button verdwijnen als Javascript aanwezig is
+- [ ] Reset button ook werkt zodra formulier al verstuurd is, maar weer wordt gewijzigd
 
 ## Bronnen
 
 - [CODEPEN FORM](https://codepen.io/balapa/pen/XbXVRg)
 - [W3SCHOOLS](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_reset)
+- [Button styling](https://codepen.io/LemonPL/pen/gXvjbq)
+- [Typewriter](https://css-tricks.com/snippets/css/typewriter-effect/)
+- [Interactive Form](https://codepen.io/epilande/pen/eZJGpP)
+- [Progress bar](https://www.youtube.com/watch?v=3l4TQyYgOg4)
+- [Share button](https://www.youtube.com/watch?v=MjB1Nyx6hns)
+- [Copy to clipboard](https://www.w3schools.com/howto/howto_js_copy_clipboard.asp)
+- [Local Storage](https://www.youtube.com/watch?v=k8yJCeuP6I8)
 
 ## Credits
 
-- Ramon, hij heeft mij geholpen met het opzetten van de link om de enquete op te slaan.
+- Ramon, hij heeft mij geholpen met het opzetten van de save link om de enquete op te slaan.
+- Robin, hij heeft mij geholpen met het automatisch opslaan in Local Storage
