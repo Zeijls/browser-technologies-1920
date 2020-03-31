@@ -172,14 +172,15 @@ a {
   opacity: 1;
   padding: 1rem 2rem;
   display: block;
-  font-size: 0.8rem;
-  background: white;
+  font-size: 1rem;
+  background: #222222;
+  color: rgb(16, 172, 101);
   width: 80%;
   margin-top: 50%;
   overflow: hidden;
   line-height: normal;
   letter-spacing: normal;
-  color: black;
+  /* color: black; */
   position: unset;
   transform: none;
   transition: none;

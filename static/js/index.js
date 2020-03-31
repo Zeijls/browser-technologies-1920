@@ -10,12 +10,15 @@ let title = document.getElementById("title");
 let firstname = document.getElementById("firstname");
 
 // Share button
-
+const shareButton = document.querySelector(".share-btn");
 const overlay = document.querySelector(".overlay");
 const shareModal = document.querySelector(".share");
 
 const titleShare = window.document.title;
 const url = window.document.location.href;
+
+// Copy button
+const copyButton = document.querySelector(".copy");
 
 // Local storage save
 allInputs.forEach(x => {
@@ -59,49 +62,44 @@ if (firstname) {
   });
 }
 // Share Button
+if (shareButton) {
+  shareButton.addEventListener("click", function() {
+    if (navigator.share) {
+      navigator
+        .share({
+          url: url,
+          text: shareList
+        })
+        .then(function() {
+          console.log("Thanks for sharing!");
+        })
+        .catch(console.error);
+    } else {
+      overlay.classList.add("show-share");
+      shareModal.classList.add("show-share");
+    }
+  });
 
-// const shareButton = document.querySelector(".share-btn");
-// if (shareButton) {
-//   shareButton.addEventListener("click", function() {
-//     if (navigator.share) {
-//       navigator
-//         .share({
-//           url: url,
-//           text: shareList
-//         })
-//         .then(function() {
-//           console.log("Thanks for sharing!");
-//         })
-//         .catch(console.error);
-//     } else {
-//       overlay.classList.add("show-share");
-//       shareModal.classList.add("show-share");
-//     }
-//   });
-// }
-
-// overlay.addEventListener("click", function() {
-//   overlay.classList.remove("show-share");
-//   shareModal.classList.remove("show-share");
-// });
+  overlay.addEventListener("click", function() {
+    overlay.classList.toggle("show-share");
+    shareModal.classList.toggle("show-share");
+  });
+}
 
 // Copy Link button
-
-var copyButton = document.querySelector(".copy");
 if (copyButton) {
   copyButton.addEventListener("click", function() {
     console.log("ik heb de button geklikt");
-    /* Get the text field */
-    var copyText = document.getElementById("myInput");
-    console.log(copyText);
-    /* Select the text field */
+
+    const copyText = document.getElementById("myInput");
+    //Selecteerd de tekst field
     copyText.select();
     copyText.setSelectionRange(0, 99999); /*For mobile devices*/
 
-    /* Copy the text inside the text field */
+    // Kopieer alle text binnen het tekst field
     document.execCommand("copy");
 
-    /* Alert the copied text */
+    // Allert (feedback) dat de text is gekopieerd
     alert("Copied the text: " + copyText.value);
   });
 }
