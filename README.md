@@ -191,9 +191,57 @@ Fallback:
 <img width="1229" alt="Screenshot 2020-03-31 at 14 55 59" src="https://user-images.githubusercontent.com/45422060/78028742-bf7dc700-735f-11ea-948b-138dcb1a99f1.png">
 </details>
 
-<details>
+## Features
+
+### Save link without Javascript
+
 <summary> Save link without Javascript</summary>
 <img width="1075" alt="Screenshot 2020-03-31 at 14 44 29" src="https://user-images.githubusercontent.com/45422060/78027747-29956c80-735e-11ea-9b20-fd270314dff7.png">
+</details>
+
+### Automatisch opslaan LocalStorage
+
+<details>
+<summary> Automatisch opslaan Localstorage </summary>
+<img width="1355" alt="Screenshot 2020-03-31 at 14 48 52" src="https://user-images.githubusercontent.com/45422060/78028112-c3f5b000-735e-11ea-88ec-2eb0bef73e85.png">
+</details>
+
+### Reset button
+
+<details>
+<summary> Reset button</summary>
+Ingevulde antwoorden: <br>
+<img width="1238" alt="Screenshot 2020-03-31 at 14 53 39" src="https://user-images.githubusercontent.com/45422060/78028543-7af22b80-735f-11ea-9ef2-a3ffa2423022.png">
+<br>
+Gereset: <br>
+<img width="1226" alt="Screenshot 2020-03-31 at 14 54 01" src="https://user-images.githubusercontent.com/45422060/78028547-7cbbef00-735f-11ea-92c0-8950ac7a67eb.png">
+
+</details>
+
+### Copy button
+
+<details>
+<summary> Copy button</summary>
+Copy button:
+<img width="1098" alt="Screenshot 2020-03-31 at 14 50 16" src="https://user-images.githubusercontent.com/45422060/78028310-1d5ddf00-735f-11ea-82f0-09703d5cc781.png">
+<br>
+Alert:
+<img width="1062" alt="Screenshot 2020-03-31 at 14 50 21" src="https://user-images.githubusercontent.com/45422060/78028316-1fc03900-735f-11ea-95c2-7f97429d694f.png">
+<br>
+Copied:
+<img width="1039" alt="Screenshot 2020-03-31 at 14 50 28" src="https://user-images.githubusercontent.com/45422060/78028321-2189fc80-735f-11ea-8f04-ef53e37cf3fe.png">
+
+</details>
+
+### Share button
+
+<details>
+<summary> Share button</summary>
+Share:
+<img width="476" alt="Screenshot 2020-03-31 at 14 14 50" src="https://user-images.githubusercontent.com/45422060/78028766-cad0f280-735f-11ea-968b-ce9080e7a505.png">
+<br>
+Fallback:
+<img width="1229" alt="Screenshot 2020-03-31 at 14 55 59" src="https://user-images.githubusercontent.com/45422060/78028742-bf7dc700-735f-11ea-948b-138dcb1a99f1.png">
 </details>
 
 ## Feature Detection
