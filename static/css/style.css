@@ -181,7 +181,7 @@ a {
   line-height: normal;
   letter-spacing: normal;
   /* color: black; */
-  position: unset;
+  position: inherit;
   transform: none;
   transition: none;
   margin: auto;
