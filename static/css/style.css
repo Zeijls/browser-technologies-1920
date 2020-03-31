@@ -140,7 +140,6 @@ a {
 .save-page > article {
   max-width: 100%;
   margin: auto;
-  /* overflow: hidden; */
 }
 
 .save-page h3 {
@@ -254,28 +253,6 @@ input {
   line-height: 4rem;
   letter-spacing: 0.125rem;
 }
-
-/* KLEUREN BORDER LINE FALLBACK */
-
-/* input:nth-of-type(1):focus:valid {
-  border-bottom: 5px solid #6bccb4
-}
-
-input:nth-of-type(2):focus:valid {
-  border-bottom: 5px solid #6bccb4;
-}
-
-input:nth-of-type(3):focus:valid {
-  border-bottom: 5px solid #6bccb4;
-}
-
-input:nth-of-type(4):focus:valid {
-  border-bottom: 5px solid #6bccb4;
-}
-
-input:nth-of-type(5):focus:valid {
-  border-bottom: 5px solid #6bccb4;
-} */
 
 /* INTERACTIVE INPUT TYPES */
 /* BRON: https://codepen.io/epilande/pen/eZJGpP */
