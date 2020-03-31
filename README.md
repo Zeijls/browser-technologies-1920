@@ -191,25 +191,132 @@ Fallback:
 <img width="1229" alt="Screenshot 2020-03-31 at 14 55 59" src="https://user-images.githubusercontent.com/45422060/78028742-bf7dc700-735f-11ea-948b-138dcb1a99f1.png">
 </details>
 
+<details>
+<summary> Titel Typewriting</summary>
+<img width="556" alt="Screenshot 2020-03-31 at 15 07 36" src="https://user-images.githubusercontent.com/45422060/78029747-5e56f300-7361-11ea-93e3-e1ca4784bcec.png">
+</details>
+
 ## Features
 
 ### Save link without Javascript
+
+Als javascript ontbreekt, en de gebruiker de antwoorden wilt opslaan kan hij op de button "opslaan" klikken. Hij ontvangt een linkje waarmee je de enquete later kunt vervolgen. In de link die hier wordt weergegeven zijn alle waardes van de text fields opgeslagen in een query in de url. Zoals je in dit voorbeeld kunt zien staat er bijvoorbeeld: firstname=Simone, dit betekend van de gebruiker bij de eerste vraag Naam "Simone" heeft ingevuld.
+
+`Resultaat`
 
 <summary> Save link without Javascript</summary>
 <img width="1075" alt="Screenshot 2020-03-31 at 14 44 29" src="https://user-images.githubusercontent.com/45422060/78027747-29956c80-735e-11ea-9b20-fd270314dff7.png">
 </details>
 
+<details><summary> Code </summary>
+
+`HTML waarde in de input type=text`
+
+> value="<%= res.firstname %>"
+
+`Save page`
+
+```html
+<div class="save-page">
+  <h3>Vervolg uw enquete later</h3>
+  <article>
+    <p>
+      LET OP! Bewaar deze link goed zodat u de enquete later kunt afmaken
+    </p>
+    <a href="<%= url %>"
+      ><input class="saveInput" type="text" value="<%= url %>" id="myInput"
+    /></a>
+    <button class="copy" id="copy-link-btn" aria-label="Copy">
+      Kopieer Link
+    </button>
+  </article>
+</div>
+```
+
+`Javscript`:
+
+```js
+const shareButton = document.querySelector(".share-btn");
+const overlay = document.querySelector(".overlay");
+const shareModal = document.querySelector(".share");
+
+if (shareButton) {
+  shareButton.addEventListener("click", function() {
+    if (navigator.share) {
+      navigator
+        .share({
+          url: url,
+          text: shareList
+        })
+        .then(function() {
+          console.log("Thanks for sharing!");
+        })
+        .catch(console.error);
+    } else {
+      overlay.classList.add("show-share");
+      shareModal.classList.add("show-share");
+    }
+  });
+  overlay.addEventListener("click", function() {
+    overlay.classList.toggle("show-share");
+    shareModal.classList.toggle("show-share");
+  });
+}
+```
+
+</details>
+
 ### Automatisch opslaan LocalStorage
+
+Als javascript aan staat wordt ieder antwoord wat een gebruiker invult direct opgeslagen in LocalStorage op het moment dat hij op enter klikt. Zodra de gebruiker de pagina verlaat en later terugkomt zijn deze antwoorden nog steeds ingevuld.
 
 <details>
 <summary> Automatisch opslaan Localstorage </summary>
 <img width="1355" alt="Screenshot 2020-03-31 at 14 48 52" src="https://user-images.githubusercontent.com/45422060/78028112-c3f5b000-735e-11ea-88ec-2eb0bef73e85.png">
 </details>
 
+<details><summary> Code </summary>
+
+`Javscript`:
+
+```js
+// Local storage save
+const allInputs = document.querySelectorAll("input");
+
+allInputs.forEach(x => {
+  console.log(x);
+  console.log(x.id);
+
+  if (localStorage.getItem(x.id)) {
+    console.log(`id ${x.id} zit erin!`);
+    x.value = JSON.parse(localStorage.getItem(x.id));
+  }
+
+  x.addEventListener("keydown", onEnter);
+});
+
+function onEnter(e) {
+  if (e.keyCode === 13) {
+    const inputId = e.target.id;
+    const inputValue = e.target.value;
+    console.log({ inputId, inputValue });
+
+    localStorage.setItem(inputId, JSON.stringify(inputValue));
+    console.log(localStorage.getItem(inputId));
+  }
+}
+
+console.log(allInputs);
+```
+
+</details>
+
 ### Reset button
 
 <details>
 <summary> Reset button</summary>
+Doordat de antwoorden worden opgeslagen in Local Storage kan het zijn dat de gebruiker zijn antwoorden wilt verwijderen. Dit kan natuurlijk door met backspace het antwoord te verwijderen en een nieuwe in te voeren. Maar de gebruiker kan hier ook de reset button voor gebruiken. Zodra er op deze button wordt geklikt worden alle waardes leeggehaald, maar ook alle antwoorden uit local storage worden verwijderd.
+
 Ingevulde antwoorden: <br>
 <img width="1238" alt="Screenshot 2020-03-31 at 14 53 39" src="https://user-images.githubusercontent.com/45422060/78028543-7af22b80-735f-11ea-9ef2-a3ffa2423022.png">
 <br>
@@ -218,7 +325,28 @@ Gereset: <br>
 
 </details>
 
+<details><summary> Code </summary>
+
+`Javscript`:
+
+```js
+// Reset button
+const resetButton = document.querySelector(".reset");
+
+if (resetButton) {
+  resetButton.addEventListener("click", function() {
+    localStorage.clear();
+    console.log("Local storage is empty!");
+    inputValue = " ";
+  });
+}
+```
+
+</details>
+
 ### Copy button
+
+Omdat gebruikers zonder javascript een link krijgen die ze moeten bewaren om de volgende keer de enquete te hervatten is het handig als ze niet eerst de hele link moeten selecteren en dan pas kopieren. Ik heb hier een copy button voor gemaakt zodat het ook nog duidelijker is dat deze button goed moet worden bewaard. Zodra de gebruiker de button inklikt, wordt de linkt automatisch bewaard in het clipboard van de gebruiker.
 
 <details>
 <summary> Copy button</summary>
@@ -233,7 +361,37 @@ Copied:
 
 </details>
 
+<details><summary> Code </summary>
+
+`Javscript`:
+
+```js
+// Copy Link button
+const copyButton = document.querySelector(".copy");
+
+if (copyButton) {
+  copyButton.addEventListener("click", function() {
+    console.log("ik heb de button geklikt");
+
+    const copyText = document.getElementById("myInput");
+    //Selecteerd de tekst field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+    // Kopieer alle text binnen het tekst field
+    document.execCommand("copy");
+
+    // Allert (feedback) dat de text is gekopieerd
+    alert("Copied the text: " + copyText.value);
+  });
+}
+```
+
+</details>
+
 ### Share button
+
+Nadat de gebruiker de enquete heeft ingevuld, is er een mogelijkheid om deze te delen dmv. Web Share API. Deze wordt niet heel goed ondersteund, dus hiervoor heb ik een fallback gemaakt. Zodra de browser waarin de website wordt bezocht, de Web Share API niet ondersteund, wordt de fallback om de antwoorden te delen via mail weergegeven.
 
 <details>
 <summary> Share button</summary>
@@ -242,6 +400,70 @@ Share:
 <br>
 Fallback:
 <img width="1229" alt="Screenshot 2020-03-31 at 14 55 59" src="https://user-images.githubusercontent.com/45422060/78028742-bf7dc700-735f-11ea-948b-138dcb1a99f1.png">
+</details>
+
+<details><summary> Code </summary>
+
+`Javscript`:
+
+```js
+// Share Button
+const shareButton = document.querySelector(".share-btn");
+const overlay = document.querySelector(".overlay");
+const shareModal = document.querySelector(".share");
+
+if (shareButton) {
+  shareButton.addEventListener("click", function() {
+    if (navigator.share) {
+      navigator
+        .share({
+          url: url,
+          text: shareList
+        })
+        .then(function() {
+          console.log("Thanks for sharing!");
+        })
+        .catch(console.error);
+    } else {
+      overlay.classList.add("show-share");
+      shareModal.classList.add("show-share");
+    }
+  });
+
+  overlay.addEventListener("click", function() {
+    overlay.classList.toggle("show-share");
+    shareModal.classList.toggle("show-share");
+  });
+}
+```
+
+</details>
+
+### Titel Typewriting
+
+Zodra de gebruiker zijn naam invult bij vraag 1 wordt deze aangepast in de titel. De gebruiker wordt hiermee verwelkomt.
+
+<details>
+<summary> Titel Typewriting</summary>
+<img width="556" alt="Screenshot 2020-03-31 at 15 07 36" src="https://user-images.githubusercontent.com/45422060/78029747-5e56f300-7361-11ea-93e3-e1ca4784bcec.png">
+</details>
+
+<details><summary> Code </summary>
+
+`Javscript`:
+
+```js
+// Typewriting Title
+let title = document.getElementById("title");
+let firstname = document.getElementById("firstname");
+
+if (firstname) {
+  firstname.addEventListener("input", function() {
+    title.innerHTML = "Welkom, " + firstname.value;
+  });
+}
+```
+
 </details>
 
 ## Feature Detection
