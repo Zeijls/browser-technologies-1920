@@ -59,157 +59,49 @@ if (firstname) {
   });
 }
 // Share Button
-//
 
-const shareButton = document.querySelector(".share-btn");
-if (shareButton) {
-  shareButton.addEventListener("click", function() {
-    if (navigator.share) {
-      navigator
-        .share({
-          url: url,
-          text: shareList
-        })
-        .then(function() {
-          console.log("Thanks for sharing!");
-        })
-        .catch(console.error);
-    } else {
-      overlay.classList.add("show-share");
-      shareModal.classList.add("show-share");
-      // window.open(
-      //   "mailto:?subject=My grocery list!&body=This is my grocery list: " +
-      //     shareList
-      // );
-    }
-  });
-}
-
-overlay.addEventListener("click", function() {
-  overlay.classList.remove("show-share");
-  shareModal.classList.remove("show-share");
-});
-
+// const shareButton = document.querySelector(".share-btn");
+// if (shareButton) {
 //   shareButton.addEventListener("click", function() {
-//     console.log("element is clicked!!");
 //     if (navigator.share) {
 //       navigator
 //         .share({
-//           titleShare: `${title}`,
-//           list: `${list}`
+//           url: url,
+//           text: shareList
 //         })
 //         .then(function() {
 //           console.log("Thanks for sharing!");
 //         })
 //         .catch(console.error);
 //     } else {
-//       console.log("geen navigate.share aanwezig");
 //       overlay.classList.add("show-share");
-//       console.log("voegt classlist toe");
 //       shareModal.classList.add("show-share");
-//       console.log("voegt nog een classlist toe");
 //     }
 //   });
 // }
 
-// if (overlay) {
-//   overlay.addEventListener("click", function() {
-//     overlay.classList.remove("show-share");
-//     shareModal.classList.remove("show-share");
-//   });
-// }
+// overlay.addEventListener("click", function() {
+//   overlay.classList.remove("show-share");
+//   shareModal.classList.remove("show-share");
+// });
 
-// Copy Button Save link
+// Copy Link button
 
-// (function() {
-//   var copyButton = document.querySelector(".copy");
-//   var copyInput = document.querySelector(".save-page article a");
-//   copyButton.addEventListener("click", function(e) {
-//     e.preventDefault();
-//     var text = copyInput.select();
-//     document.execCommand("copy");
-//   });
+var copyButton = document.querySelector(".copy");
+if (copyButton) {
+  copyButton.addEventListener("click", function() {
+    console.log("ik heb de button geklikt");
+    /* Get the text field */
+    var copyText = document.getElementById("myInput");
+    console.log(copyText);
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
 
-//   copyInput.addEventListener("click", function() {
-//     this.select();
-//   });
-// })();
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
 
-// (function() {
-//   var copylinkbtn = document.getElementById("copy-link-btn"),
-//     copylink = document.getElementById("copy-link-wrapper"),
-//     overlay = document.getElementById("overlay");
-
-//   copylinkbtn.addEventListener(
-//     "click",
-//     function() {
-//       var error = document.getElementsByClassName("error");
-
-//       while (error[0]) {
-//         error[0].parentNode.removeChild(error[0]);
-//       }
-
-//       document.body.className += " active";
-
-//       copylink.children[2].value = window.location.href;
-//       copylink.children[2].focus();
-//       copylink.children[2].select();
-//     },
-//     false
-//   );
-
-//   overlay.addEventListener(
-//     "click",
-//     function() {
-//       document.body.className = "";
-//     },
-//     false
-//   );
-
-//   copylink.children[2].addEventListener(
-//     "keydown",
-//     function(e) {
-//       var error = document.getElementsByClassName("error");
-
-//       while (error[0]) {
-//         error[0].parentNode.removeChild(error[0]);
-//       }
-
-//       setTimeout(function() {
-//         if (
-//           (e.metaKey || e.ctrlKey) &&
-//           e.keyCode === 67 &&
-//           isTextSelected(copylink.children[2])
-//         ) {
-//           document.body.className = "";
-//         } else if (
-//           (e.metaKey || e.ctrlKey) &&
-//           e.keyCode === 67 &&
-//           isTextSelected(copylink.children[2]) === false
-//         ) {
-//           var error = document.createElement("span");
-//           error.className = "error";
-//           var errortext = document.createTextNode(
-//             "The link was not copied, make sure the entire text is selected."
-//           );
-
-//           error.appendChild(errortext);
-//           copylink.appendChild(error);
-//         }
-//       }, 100);
-
-//       function isTextSelected(input) {
-//         if (typeof input.selectionStart == "number") {
-//           return (
-//             input.selectionStart == 0 &&
-//             input.selectionEnd == input.value.length
-//           );
-//         } else if (typeof document.selection != "undefined") {
-//           input.focus();
-//           return document.selection.createRange().text == input.value;
-//         }
-//       }
-//     },
-//     false
-//   );
-// })();
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value);
+  });
+}
