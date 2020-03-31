@@ -24,20 +24,19 @@
     </div>
     <div class="overlay"></div> -->
 
-    <button class="share-btn">Share!</button>
-  </div>
+    <button class="share-btn" aria-label="Share">Share!</button>
 
-  <div class="share">
-    <h3>Share by Email</h3>
-    <a
-    href="mailto:?subject=Ik wilde je graag mijn antwoorden van de enquete laten zien&amp;body=Check it here http://www.website.com." class="share-button"
-    title="Share by Email"
-  >
-    Send
-  </a>
-</button>
-  </div>
-  <div class="overlay"></div>
+    <div class="share">
+      <h3>Share by Email</h3>
+      <a
+        href="mailto:?subject=Ik wilde je graag mijn antwoorden van de enquete laten zien&amp;body=Check it here http://www.website.com."
+        class="share-button"
+        title="Share by Email"
+      >
+        Verstuur
+      </a>
+    </div>
+    <div class="overlay"></div>
 
     <section class="overzicht">
       <div class="antwoord">
@@ -62,8 +61,10 @@
       </div>
 
       <div class="buttons">
-        <a href="<%= url %>" class="btn">Edit</a>
-        <a href="/confirm" class="btn" type="send">Confirm </a>
+        <a href="<%= url %>" class="btn" aria-label="Edit">Wijzig</a>
+        <a href="/confirm" class="btn" type="send" aria-label="Confirm"
+          >Bevestig
+        </a>
       </div>
     </section>
     <%- include('partials/footer') %>
