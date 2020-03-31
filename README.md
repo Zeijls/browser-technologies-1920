@@ -629,8 +629,8 @@ Deze opdrachten staan in mijn WIKI
 
 ## To Do
 
-- [ ] Save button verdwijnen als Javascript aanwezig is
-- [ ] Reset button ook werkt zodra formulier al verstuurd is, maar weer wordt gewijzigd
+- [ ] Save button verdwijnt als Javascript aanwezig is
+- [ ] Reset button werkt ook zodra formulier al verstuurd is maar weer wordt gewijzigd
 
 ## Bronnen
 
