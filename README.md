@@ -40,10 +40,12 @@ npm run dev
 
 ## Concept
 
-### Invullen van de Enquete
+<details><summary>Invullen van de Enquete</summary>
 
 Je kunt verschillende vragen beantwoorden in de enquete
 <img width="1229" alt="Screenshot 2020-03-31 at 14 28 04" src="https://user-images.githubusercontent.com/45422060/78026500-05389080-735c-11ea-817c-1db1bb99d3ac.png">
+
+</details>
 
 ### Opslaan
 
