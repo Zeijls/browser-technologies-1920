@@ -477,15 +477,18 @@ Nadat opdracht 2 was afgerond heb ik opnieuw het 8 feature onderzoek toegepast o
 
 <details><summary> Firefox </summary>
 Voor het testen in verschillende browsers ben ik begonnen met Firefox. In deze browser werkte alles naar behoren en had ik nergens iets op aan te merken.
+<img width="1252" alt="Screenshot 2020-03-31 at 15 29 48" src="https://user-images.githubusercontent.com/45422060/78032070-bb07dd00-7364-11ea-97dc-3dc5bf8fa80a.png">
 </details>
 
 <details><summary> Safari </summary>
 Alle features werken naar behoren.
+<img width="1134" alt="Screenshot 2020-03-31 at 15 30 08" src="https://user-images.githubusercontent.com/45422060/78032042-adeaee00-7364-11ea-860f-c8c4fafad8fc.png">
 </details>
 
 <details><summary> Opera </summary>
 Bij opera was eigenlijk precies hetzelfde verhaal als bij firefox en safari. Vanaf dit moment wilde ik alle browsers gaan uittesten. Ik kwam op de volgende website en hier kun je een proeftest draaien met allemaal verschillende browsers.
 [Lamdatest](https://app.lambdatest.com/console/realtime)
+<img width="1301" alt="Screenshot 2020-03-31 at 15 30 45" src="https://user-images.githubusercontent.com/45422060/78031994-9d3a7800-7364-11ea-99cc-6dd2bc8a02ab.png">
 </details>
 
 <details><summary> Edge </summary>
@@ -560,6 +563,16 @@ if (shareButton) {
 
 </details>
 </details>
+
+## Conclusie
+
+Student kan de core functionaliteit van een use case doorgronden
+Toegankelijkheid: De user experience is goed
+Readme: In de beschrijving van het project staat een probleemdefinitie, hoe het probleem is opgelost en een uitleg van de code.
+Student kan uitleggen wat Progressive enhancement is.
+Student laat zien hoe Progressive Enhancement toe te passen in Web Development
+Student kan uitleggen wat Feature detection is.
+Student laat zien hoe Feature Detection kan worden toegepast in Web Development
 
 ## Artikelen
 
