@@ -32,8 +32,7 @@
 
 ## Live Demo
 
-[Live Demo]()
-De live demo werkt nog niet. Moet ik nog deployen via Heroku
+[Live Demo](https://github.com/Zeijls/web-design-1920)
 
 ## Installatie
 
@@ -259,14 +258,14 @@ const overlay = document.querySelector(".overlay");
 const shareModal = document.querySelector(".share");
 
 if (shareButton) {
-  shareButton.addEventListener("click", function() {
+  shareButton.addEventListener("click", function () {
     if (navigator.share) {
       navigator
         .share({
           url: url,
-          text: shareList
+          text: shareList,
         })
-        .then(function() {
+        .then(function () {
           console.log("Thanks for sharing!");
         })
         .catch(console.error);
@@ -275,7 +274,7 @@ if (shareButton) {
       shareModal.classList.add("show-share");
     }
   });
-  overlay.addEventListener("click", function() {
+  overlay.addEventListener("click", function () {
     overlay.classList.toggle("show-share");
     shareModal.classList.toggle("show-share");
   });
@@ -301,7 +300,7 @@ Als javascript aan staat wordt ieder antwoord wat een gebruiker invult direct op
 // Local storage save
 const allInputs = document.querySelectorAll("input");
 
-allInputs.forEach(x => {
+allInputs.forEach((x) => {
   console.log(x);
   console.log(x.id);
 
@@ -352,7 +351,7 @@ Gereset: <br>
 const resetButton = document.querySelector(".reset");
 
 if (resetButton) {
-  resetButton.addEventListener("click", function() {
+  resetButton.addEventListener("click", function () {
     localStorage.clear();
     console.log("Local storage is empty!");
     inputValue = " ";
@@ -388,7 +387,7 @@ Copied:
 const copyButton = document.querySelector(".copy");
 
 if (copyButton) {
-  copyButton.addEventListener("click", function() {
+  copyButton.addEventListener("click", function () {
     console.log("ik heb de button geklikt");
 
     const copyText = document.getElementById("myInput");
@@ -431,14 +430,14 @@ const overlay = document.querySelector(".overlay");
 const shareModal = document.querySelector(".share");
 
 if (shareButton) {
-  shareButton.addEventListener("click", function() {
+  shareButton.addEventListener("click", function () {
     if (navigator.share) {
       navigator
         .share({
           url: url,
-          text: shareList
+          text: shareList,
         })
-        .then(function() {
+        .then(function () {
           console.log("Thanks for sharing!");
         })
         .catch(console.error);
@@ -448,7 +447,7 @@ if (shareButton) {
     }
   });
 
-  overlay.addEventListener("click", function() {
+  overlay.addEventListener("click", function () {
     overlay.classList.toggle("show-share");
     shareModal.classList.toggle("show-share");
   });
@@ -476,7 +475,7 @@ let title = document.getElementById("title");
 let firstname = document.getElementById("firstname");
 
 if (firstname) {
-  firstname.addEventListener("input", function() {
+  firstname.addEventListener("input", function () {
     title.innerHTML = "Welkom, " + firstname.value;
   });
 }
@@ -556,14 +555,14 @@ Can i use ondersteuning Web Share API:
 
 ```js
 if (shareButton) {
-  shareButton.addEventListener("click", function() {
+  shareButton.addEventListener("click", function () {
     if (navigator.share) {
       navigator
         .share({
           url: url,
-          text: shareList
+          text: shareList,
         })
-        .then(function() {
+        .then(function () {
           console.log("Thanks for sharing!");
         })
         .catch(console.error);
@@ -572,7 +571,7 @@ if (shareButton) {
       shareModal.classList.add("show-share");
     }
   });
-  overlay.addEventListener("click", function() {
+  overlay.addEventListener("click", function () {
     overlay.classList.toggle("show-share");
     shareModal.classList.toggle("show-share");
   });
