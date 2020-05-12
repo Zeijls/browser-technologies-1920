@@ -32,7 +32,7 @@
 
 ## Live Demo
 
-[Live Demo](https://github.com/Zeijls/web-design-1920)
+[Live Demo](https://browsertechnologies-simone.herokuapp.com/)
 
 ## Installatie
 
